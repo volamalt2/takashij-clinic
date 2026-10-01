@@ -5083,15 +5083,13 @@ body.department-page {
   height: 240px;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(197, 162, 83, 0.28);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dept-step-card-photo:hover {
   transform: translateY(-4px);
-  border-color: #C39E57;
-  box-shadow: 0 14px 32px rgba(195, 158, 87, 0.2);
+  box-shadow: 0 14px 32px rgba(142, 114, 52, 0.25);
 }
 
 .dept-step-card-bg {
@@ -5110,15 +5108,13 @@ body.department-page {
 .dept-step-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.82) 100%);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  background: linear-gradient(100deg, rgba(140, 110, 48, 0.94) 0%, rgba(140, 110, 48, 0.88) 45%, rgba(140, 110, 48, 0.25) 80%, rgba(0, 0, 0, 0.1) 100%);
   z-index: 1;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .dept-step-card-photo:hover .dept-step-card-overlay {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.72) 100%);
+  background: linear-gradient(100deg, rgba(152, 120, 52, 0.92) 0%, rgba(152, 120, 52, 0.84) 48%, rgba(152, 120, 52, 0.18) 85%, rgba(0, 0, 0, 0.05) 100%);
 }
 
 .dept-step-card-inner {
@@ -5126,25 +5122,28 @@ body.department-page {
   z-index: 2;
   padding: 24px 22px;
   height: 100%;
+  max-width: 62%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .dept-step-card-inner h4 {
-  font-size: 1.15rem;
+  font-size: 1.08rem;
   font-weight: 700;
-  color: #8E6C38;
+  color: #FFFFFF;
   margin-bottom: 10px;
   line-height: 1.35;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .dept-step-card-inner p {
-  font-size: 0.94rem;
-  color: #3C352E;
-  line-height: 1.6;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.55;
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Related Departments Modern Grid */
@@ -5464,6 +5463,13 @@ body.department-page {
     padding: 22px 18px;
     margin: 0 auto;
     border: 1px solid rgba(197, 162, 83, 0.2);
+  }
+  .dept-step-card-inner {
+    max-width: 80%;
+    padding: 20px 16px;
+  }
+  .dept-step-card-overlay {
+    background: linear-gradient(100deg, rgba(140, 110, 48, 0.94) 0%, rgba(140, 110, 48, 0.88) 60%, rgba(140, 110, 48, 0.3) 90%, rgba(0, 0, 0, 0.15) 100%);
   }
   .dept-hero-title,
   .dept-hero-modern-title {
