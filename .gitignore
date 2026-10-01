@@ -1,0 +1,28 @@
+# WordPress Themes & Source
+/takashij-theme/
+/longevity-theme/
+*.zip
+
+# Python internal scripts & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.py
+
+# Temporary & test files
+/*.png
+/*.txt
+/*.json
+test_*.png
+check_*.png
+homepage_*.png
+gallery_preview.html
+
+# Raw unoptimized photo archive
+/anh website/
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

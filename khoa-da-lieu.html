@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHOA DA LIỄU - Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC</title>
+  <meta name="description" content="Khoa Da liễu tại Takashij Clinic tiếp cận làn da dưới góc độ y học trường thọ: vẻ đẹp bền vững bắt nguồn từ tế bào khỏe mạnh. Chúng tôi ứng dụng các phác đ...">
+  <link rel="icon" href="assets/images/logo-takashij-transparent.png" type="image/png">
+
+  <!-- Google Fonts: Lora & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+
+  <!-- Core Theme Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="department-page">
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION (EXACT REPLICA OF HOMEPAGE)
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <div class="header-logo">
+            <a href="index.html" class="brand-logo-link">
+              <img src="assets/images/logo-takashij-transparent.png" alt="Takashij Clinic" class="brand-emblem" style="height: 52px; width: auto;">
+              <div class="brand-text">
+                <span class="brand-sub" style="color: #8E6C38; font-weight: 600; font-size: 11px;">Viện Nghiên Cứu Sức Khỏe &amp; Nha Khoa</span>
+                <span class="brand-main" style="color: #2C251E; font-weight: 800; font-size: 20px;">TAKASHIJ <span style="color: #D4292B;">CLINIC</span></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="header-top-actions">
+            <a href="huong-dan-tham-kham.html" class="btn-outline">Hướng dẫn thăm khám</a>
+            <a href="dat-lich-kham.html" class="btn-primary">Đặt lịch ngay</a>
+            
+            <div class="lang-switch" title="Chuyển đổi ngôn ngữ">
+              <i class="fa-solid fa-globe"></i>
+              <span>VI</span>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Mở menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-inner">
+          <nav class="main-navigation">
+            <ul>
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="ve-chung-toi.html">Về chúng tôi</a></li>
+              <li class="nav-item-has-children active">
+                <a href="san-pham-dich-vu.html">
+                  Sản phẩm &amp; Dịch vụ 
+                  <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="san-pham-dich-vu.html">Tất cả Chuyên khoa</a></li>
+                  <li><a href="khoa-noi-tong-hop.html">Khoa Nội tổng hợp</a></li>
+                  <li><a href="khoa-ngoai.html">Khoa Ngoại</a></li>
+                  <li><a href="khoa-chuan-doan-hinh-anh.html">Khoa Chẩn đoán hình ảnh</a></li>
+                  <li><a href="khoa-xet-nghiem.html">Khoa Xét nghiệm</a></li>
+                  <li><a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a></li>
+                  <li><a href="khoa-da-lieu.html">Khoa Da liễu</a></li>
+                  <li><a href="khoa-phu-khoa.html">Khoa Phụ khoa</a></li>
+                </ul>
+              </li>
+              <li><a href="kien-thuc-ve-y-khoa.html">Kiến thức y khoa</a></li>
+              <li><a href="tin-tuc.html">Tin tức</a></li>
+              <li><a href="lien-he.html">Liên hệ</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-search-pill">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SPLIT HERO BANNER (EXACT REPLICA OF live_khoa_noi.png)
+       ========================================================================== -->
+  <section class="dept-hero-split">
+    <div class="container">
+      <div class="dept-hero-grid">
+        <!-- Left Side: Real Clinic Image -->
+        <div class="dept-hero-image-wrap">
+          <img src="assets/images/takashij_real/phong-dieu-tri-cong-nghe-cao-1.jpg" alt="KHOA DA LIỄU">
+        </div>
+
+        <!-- Right Side: Elegant Warm Ivory Text -->
+        <div class="dept-hero-content">
+          <span class="dept-hero-tag">CHUYÊN KHOA ĐIỀU TRỊ</span>
+          <h1 class="dept-hero-title">KHOA DA LIỄU</h1>
+          <p class="dept-hero-desc">
+            Khoa Da liễu tại Takashij Clinic tiếp cận làn da dưới góc độ y học trường thọ: vẻ đẹp bền vững bắt nguồn từ tế bào khỏe mạnh. Chúng tôi ứng dụng các phác đồ y khoa cá nhân hóa kết hợp công nghệ thẩm mỹ không xâm lấn tiên tiến, điều trị tận gốc các bệnh lý da liễu và trẻ hóa làn da tự nhiên.
+          </p>
+          <div class="dept-hero-actions">
+            <a href="#booking" class="btn-primary" style="padding: 12px 30px; border-radius: 30px; font-weight: 700; text-transform: none; font-size: 1rem;">Đặt lịch khám ngay</a>
+            <a href="tel:0982375637" class="btn-outline" style="padding: 12px 26px; border-radius: 30px; font-weight: 600; text-transform: none; font-size: 1rem; background: #FFFFFF; border-color: #E0CA89;">Tư vấn: 0982 375 637</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- 4-PILL FLOATING BAR (MATCHES SAMPLE SCREENSHOT 2) -->
+  <section class="dept-hero-pill-bar">
+    <div class="container">
+      <div class="dept-pillars-grid">
+        <div class="dept-pillar-col">
+          <div class="dept-pillar-icon-box">
+            <img src="assets/images/icons/icon-website-03.png" alt="Đội ngũ chuyên gia đầu ngành">
+          </div>
+          <div class="dept-pillar-text">
+            <strong>ĐỘI NGŨ CHUYÊN GIA</strong>
+            <span>ĐẦU NGÀNH</span>
+          </div>
+        </div>
+        <div class="dept-pillar-col">
+          <div class="dept-pillar-icon-box">
+            <img src="assets/images/icons/icon-website-04.png" alt="Chăm sóc sức khỏe toàn diện">
+          </div>
+          <div class="dept-pillar-text">
+            <strong>CHĂM SÓC SỨC KHỎE</strong>
+            <span>TOÀN DIỆN</span>
+          </div>
+        </div>
+        <div class="dept-pillar-col">
+          <div class="dept-pillar-icon-box">
+            <img src="assets/images/icons/icon-website-05.png" alt="Dịch vụ y tế đẳng cấp">
+          </div>
+          <div class="dept-pillar-text">
+            <strong>DỊCH VỤ Y TẾ</strong>
+            <span>ĐẲNG CẤP</span>
+          </div>
+        </div>
+        <div class="dept-pillar-col">
+          <div class="dept-pillar-icon-box">
+            <img src="assets/images/icons/icon-website-06.png" alt="Hiệu quả đạt chuẩn y khoa">
+          </div>
+          <div class="dept-pillar-text">
+            <strong>HIỆU QUẢ</strong>
+            <span>ĐẠT CHUẨN Y KHOA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SPECIALIZED PACKAGES SECTION (EXACT REPLICA OF live_khoa_noi.png)
+       ========================================================================== -->
+  <section class="dept-packages-section">
+    <div class="container">
+      <div class="dept-section-header">
+        <div class="dept-section-subtitle">CÁC GÓI TẦM SOÁT SỨC KHỎE CHUYÊN BIỆT</div>
+        <h2 class="dept-section-title">KHÁM SỨC KHỎE ĐỊNH KỲ - PHÁT HIỆN SỚM BỆNH LÝ - ĐIỀU TRỊ HIỆU QUẢ</h2>
+        <p class="dept-section-desc">
+          Thiết kế khoa học, kết hợp hệ thống cận lâm sàng hiện đại giúp phát hiện sớm các nguy cơ tiềm ẩn từ giai đoạn tiền bệnh lý, đồng hành chăm sóc sức khỏe chủ động trọn đời.
+        </p>
+      </div>
+
+      <div class="dept-packages-grid">
+        
+        <a href="#booking" class="dept-package-card">
+          <div class="dept-pkg-num">01.</div>
+          <h3 class="dept-pkg-title">Thăm khám & Soi da phân tích đa tầng</h3>
+          <p class="dept-pkg-desc">Ứng dụng máy phân tích da chuyên dụng quang phổ 3D kiểm tra sắc tố sâu, tình trạng tuyến bã nhờn, độ nhạy cảm và dự đoán tốc độ lão hóa tế bào da.</p>
+          <div class="dept-pkg-footer">
+            <span class="dept-pkg-link">Đăng ký tư vấn gói khám <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="#booking" class="dept-package-card">
+          <div class="dept-pkg-num">02.</div>
+          <h3 class="dept-pkg-title">Điều trị Mụn trứng cá & Viêm da cơ địa</h3>
+          <p class="dept-pkg-desc">Phác đồ y khoa chuẩn hóa kết hợp công nghệ ánh sáng sinh học đa bước sóng, triệt tiêu vi khuẩn C.acnes, kiểm soát dầu và ngăn ngừa thâm sẹo.</p>
+          <div class="dept-pkg-footer">
+            <span class="dept-pkg-link">Đăng ký tư vấn gói khám <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="#booking" class="dept-package-card">
+          <div class="dept-pkg-num">03.</div>
+          <h3 class="dept-pkg-title">Liệu pháp Mesotherapy Phục hồi & Trẻ hóa</h3>
+          <p class="dept-pkg-desc">Bổ sung HA đa phân tử, peptide sinh học và vitamin vi điểm trực tiếp vào trung bì, giúp phục hồi da tổn thương, se khít lỗ chân lông và cấp ẩm sâu.</p>
+          <div class="dept-pkg-footer">
+            <span class="dept-pkg-link">Đăng ký tư vấn gói khám <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="#booking" class="dept-package-card">
+          <div class="dept-pkg-num">04.</div>
+          <h3 class="dept-pkg-title">Điều trị Nám, Tàn nhang & Tăng sắc tố</h3>
+          <p class="dept-pkg-desc">Công nghệ laser thế hệ mới chọn lọc melanin không xâm lấn, làm mờ nám sạm lâu năm an toàn mà không gây bào mòn hay mỏng yếu hàng rào bảo vệ da.</p>
+          <div class="dept-pkg-footer">
+            <span class="dept-pkg-link">Đăng ký tư vấn gói khám <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="#booking" class="dept-package-card">
+          <div class="dept-pkg-num">05.</div>
+          <h3 class="dept-pkg-title">Phục hồi hàng rào bảo vệ da hư tổn</h3>
+          <p class="dept-pkg-desc">Tái tạo màng ẩm tự nhiên cho làn da nhiễm corticoid, da mỏng đỏ giãn mao mạch hoặc da suy yếu do lạm dụng mỹ phẩm không rõ nguồn gốc.</p>
+          <div class="dept-pkg-footer">
+            <span class="dept-pkg-link">Đăng ký tư vấn gói khám <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="#booking" class="dept-package-card">
+          <div class="dept-pkg-num">06.</div>
+          <h3 class="dept-pkg-title">Tầm soát nốt ruồi & Bệnh lý sắc tố bất thường</h3>
+          <p class="dept-pkg-desc">Soi da Dermoscopy phóng đại vi thể giúp phát hiện sớm các dấu hiệu loạn sản tế bào hắc tố, tầm soát ung thư da giai đoạn đầu để can thiệp kịp thời.</p>
+          <div class="dept-pkg-footer">
+            <span class="dept-pkg-link">Đăng ký tư vấn gói khám <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6-STEP COMPANION PROCESS (EXACT REPLICA OF live_khoa_noi.png)
+       ========================================================================== -->
+  <section class="dept-steps-section">
+    <div class="container">
+      <div class="dept-section-header">
+        <div class="dept-section-subtitle">QUY TRÌNH CHUẨN QUỐC TẾ</div>
+        <h2 class="dept-section-title">ĐỒNG HÀNH CÙNG CHUYÊN GIA TAKASHIJ CLINIC</h2>
+        <p class="dept-section-desc">
+          Mỗi khách hàng được phục vụ bằng một quy trình thăm khám 1-kèm-1 bài bản, bảo mật và chuẩn mực y khoa.
+        </p>
+      </div>
+
+      <div class="dept-steps-grid">
+        <div class="dept-step-card">
+          <div class="dept-step-header">
+            <div class="dept-step-badge">01</div>
+            <h5>01. Lắng nghe &amp; thấu hiểu</h5>
+          </div>
+          <p>Chuyên viên y tế và bác sĩ trao đổi kỹ lưỡng để nắm rõ tình trạng sức khỏe, tiền sử bệnh lý và nhu cầu riêng của từng khách hàng.</p>
+        </div>
+
+        <div class="dept-step-card">
+          <div class="dept-step-header">
+            <div class="dept-step-badge">02</div>
+            <h5>02. Khám chuyên khoa theo yêu cầu</h5>
+          </div>
+          <p>Được thăm khám trực tiếp với bác sĩ chuyên khoa đầu ngành, phân tích các biểu hiện lâm sàng cẩn trọng và chuẩn xác.</p>
+        </div>
+
+        <div class="dept-step-card">
+          <div class="dept-step-header">
+            <div class="dept-step-badge">03</div>
+            <h5>03. Chỉ định cận lâm sàng chính xác</h5>
+          </div>
+          <p>Thực hiện các xét nghiệm sinh hóa, siêu âm 4D, X-quang kỹ thuật số bằng hệ thống thiết bị nhập khẩu từ Nhật Bản và Châu Âu.</p>
+        </div>
+
+        <div class="dept-step-card">
+          <div class="dept-step-header">
+            <div class="dept-step-badge">04</div>
+            <h5>04. Phân tích kết quả chuyên sâu</h5>
+          </div>
+          <p>Hội chẩn và phân tích đa chiều dữ liệu cận lâm sàng, phát hiện sớm các nguy cơ tiềm ẩn từ trước khi có triệu chứng rõ rệt.</p>
+        </div>
+
+        <div class="dept-step-card">
+          <div class="dept-step-header">
+            <div class="dept-step-badge">05</div>
+            <h5>05. Tư vấn phác đồ điều trị cá nhân</h5>
+          </div>
+          <p>Đưa ra phác đồ y khoa toàn diện kết hợp y học hiện đại, dinh dưỡng lâm sàng và liệu pháp phục hồi chức năng tự nhiên.</p>
+        </div>
+
+        <div class="dept-step-card">
+          <div class="dept-step-header">
+            <div class="dept-step-badge">06</div>
+            <h5>06. Theo dõi &amp; đồng hành dài hạn</h5>
+          </div>
+          <p>Bác sĩ định kỳ tái khám, đánh giá lại các chỉ số sinh hóa và điều chỉnh kế hoạch chăm sóc giúp duy trì cơ thể khỏe mạnh bền vững.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RELATED DEPARTMENTS (EXACT REPLICA OF live_khoa_noi.png)
+       ========================================================================== -->
+  <section class="dept-related-section">
+    <div class="container">
+      <div class="dept-section-header" style="margin-bottom: 35px;">
+        <h2 class="dept-section-title">CHUYÊN KHOA LIÊN QUAN</h2>
+      </div>
+
+      <div class="dept-related-grid">
+        
+        <a href="khoa-noi-tong-hop.html" class="dept-related-card">
+          <div class="dept-related-thumb">
+            <img src="assets/images/banner-takashij.jpg" alt="Khoa Nội tổng hợp">
+          </div>
+          <div class="dept-related-info">
+            <h4>Khoa Nội tổng hợp</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="khoa-ngoai.html" class="dept-related-card">
+          <div class="dept-related-thumb">
+            <img src="assets/images/phong-kham.jpg" alt="Khoa Ngoại">
+          </div>
+          <div class="dept-related-info">
+            <h4>Khoa Ngoại</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="khoa-chuan-doan-hinh-anh.html" class="dept-related-card">
+          <div class="dept-related-thumb">
+            <img src="assets/images/noi-that-2.jpg" alt="Khoa Chẩn đoán hình ảnh">
+          </div>
+          <div class="dept-related-info">
+            <h4>Khoa Chẩn đoán hình ảnh</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="khoa-xet-nghiem.html" class="dept-related-card">
+          <div class="dept-related-thumb">
+            <img src="assets/images/phong-truyen-dich.jpg" alt="Khoa Xét nghiệm">
+          </div>
+          <div class="dept-related-info">
+            <h4>Khoa Xét nghiệm</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="khoa-y-hoc-co-truyen.html" class="dept-related-card">
+          <div class="dept-related-thumb">
+            <img src="assets/images/phong-hoi-phuc.jpg" alt="Khoa Y học cổ truyền">
+          </div>
+          <div class="dept-related-info">
+            <h4>Khoa Y học cổ truyền</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="khoa-phu-khoa.html" class="dept-related-card">
+          <div class="dept-related-thumb">
+            <img src="assets/images/sanh-vip.jpg" alt="Khoa Phụ khoa">
+          </div>
+          <div class="dept-related-info">
+            <h4>Khoa Phụ khoa</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONSULTATION & BOOKING SECTION (EXACT REPLICA OF live_khoa_noi.png)
+       ========================================================================== -->
+  <section class="dept-booking-section" id="booking">
+    <div class="container">
+      <div class="dept-booking-grid">
+        <!-- Left Image -->
+        <div class="dept-booking-img-wrap">
+          <img src="assets/images/reception.jpg" alt="Đăng ký khám tại Takashij Clinic">
+        </div>
+
+        <!-- Right Form -->
+        <div class="dept-booking-form-wrap">
+          <h2 class="dept-booking-title">ĐỂ LẠI NHU CẦU THĂM KHÁM</h2>
+          <p class="dept-booking-subtitle">
+            Hãy để Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC chăm sóc sức khỏe của bạn.<br>
+            Để lại thông tin chi tiết dưới đây. Các trường bắt buộc được đánh dấu *.
+          </p>
+
+          <form class="dept-booking-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC sẽ liên hệ tư vấn trong thời gian sớm nhất.'); this.reset();">
+            <div class="dept-input-row" style="grid-template-columns: 1fr;">
+              <input type="text" class="dept-input-field" placeholder="Họ và tên *" required>
+            </div>
+
+            <div class="dept-input-row">
+              <input type="tel" class="dept-input-field" placeholder="Số điện thoại *" required pattern="[0-9](9, 12)">
+              <input type="text" class="dept-input-field datepicker" placeholder="Chọn ngày khám *" required>
+            </div>
+
+            <div class="dept-input-row" style="grid-template-columns: 1fr;">
+              <textarea class="dept-input-field dept-textarea" rows="4" placeholder="Ghi chú (nhu cầu thăm khám, triệu chứng...)" required></textarea>
+            </div>
+
+            <div class="dept-booking-actions">
+              <button type="submit" class="btn-primary" style="padding: 12px 32px; border-radius: 30px; font-weight: 700; text-transform: none; font-size: 1rem;">Đặt lịch ngay</button>
+              <a href="huong-dan-tham-kham.html" class="btn-outline" style="padding: 12px 28px; border-radius: 30px; font-weight: 600; text-transform: none; font-size: 1rem; background: #FAF7F2; border-color: #E0CA89;">Hướng dẫn thăm khám</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER TOP INFO BAR (3 BOXES ON CLEAN WHITE)
+       ========================================================================== -->
+  <div class="footer-top-info-section">
+    <div class="container">
+      <div class="footer-top-title">TAKASHIJ CLINIC</div>
+      <div class="footer-top-boxes">
+        <div class="footer-info-item">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <p><strong>Địa chỉ:</strong> 36 Nguyễn Quý Cảnh, phường Bình Trưng, TP Hồ Chí Minh.</p>
+          </div>
+        </div>
+
+        <div class="footer-info-item">
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <p>Nếu có thắc mắc hoặc cần hỗ trợ<br><strong>Liên hệ ngay:</strong> 0982 375 637</p>
+          </div>
+        </div>
+
+        <div class="footer-info-item">
+          <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+          <div>
+            <p>Giờ mở cửa<br><strong>08:00 - 17:30 (Thứ Hai đến Chủ Nhật)</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER MAIN (4 COLUMNS - RICH DARK BROWN)
+       ========================================================================== -->
+  <footer class="site-footer-main">
+    <div class="container">
+      <div class="footer-brand-bar">
+        <a href="index.html" class="brand-logo-link">
+          <img src="assets/images/logo-takashij-transparent.png" alt="Takashij Clinic" class="brand-emblem" style="height: 48px; width: auto;">
+          <div class="brand-text">
+            <span class="brand-sub" style="color: #E0CA89; font-size: 11px;">Viện Nghiên Cứu Sức Khỏe &amp; Nha Khoa</span>
+            <span class="brand-main" style="color: #FFFFFF; font-size: 20px;">TAKASHIJ <span style="color: #D4292B;">CLINIC</span></span>
+          </div>
+        </a>
+        <div class="footer-social-links">
+          <a href="https://facebook.com" target="_blank" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" class="footer-social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://youtube.com" target="_blank" class="footer-social-btn" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-hotline-badge">
+          <i class="fa-solid fa-phone-volume"></i>
+          <div>
+            <span style="font-size: 0.75rem; text-transform: uppercase; color: #cbd5e1; display: block;">Hotline</span>
+            <strong style="font-size: 1.15rem; color: #fff;">0982 375 637</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-main-grid">
+        <div class="footer-col">
+          <p><strong>Phòng khám Đa khoa Viện Nghiên Cứu Sức Khỏe &amp; Nha Khoa - TAKASHIJ CLINIC</strong></p>
+          <p>Chịu trách nhiệm chuyên môn:<br><strong>BSCK II. Nguyễn Tiến Dũng</strong> – Giám đốc chuyên môn</p>
+          <p>Địa chỉ: 36 Nguyễn Quý Cảnh, phường Bình Trưng, TP Hồ Chí Minh.</p>
+          <p>Hotline: 0982 375 637</p>
+          <p>Email: info.takashij@gmail.com</p>
+          <p>Mã số doanh nghiệp: 0110406806</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>CHUYÊN KHOA</h3>
+          <ul class="footer-links">
+            <li><a href="khoa-noi-tong-hop.html">Khoa Nội tổng hợp</a></li>
+            <li><a href="khoa-ngoai.html">Khoa Ngoại</a></li>
+            <li><a href="khoa-chuan-doan-hinh-anh.html">Khoa Chẩn đoán hình ảnh</a></li>
+            <li><a href="khoa-xet-nghiem.html">Khoa Xét nghiệm</a></li>
+            <li><a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a></li>
+            <li><a href="khoa-da-lieu.html">Khoa Da liễu</a></li>
+            <li><a href="khoa-phu-khoa.html">Khoa Phụ khoa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>VỀ CHÚNG TÔI</h3>
+          <ul class="footer-links">
+            <li><a href="ve-chung-toi.html#experts">Đội ngũ chuyên gia</a></li>
+            <li><a href="san-pham-dich-vu.html">Sản phẩm &amp; dịch vụ</a></li>
+            <li><a href="index.html#facilities">Cơ sở vật chất</a></li>
+            <li><a href="index.html#partners">Các đối tác chiến lược</a></li>
+            <li><a href="lien-he.html">Tuyển dụng nhân tài</a></li>
+            <li><a href="ve-chung-toi.html">Chính sách bảo mật thông tin</a></li>
+            <li><a href="ve-chung-toi.html">Miễn trừ trách nhiệm</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>TIN TỨC</h3>
+          <ul class="footer-links">
+            <li><a href="tin-tuc.html">Các sự kiện Trường thọ</a></li>
+            <li><a href="lien-he.html">Chăm sóc khách hàng</a></li>
+            <li><a href="tin-tuc.html">Takashij Retreat</a></li>
+            <li><a href="kien-thuc-ve-y-khoa.html">Medtalks - Hiểu đúng • Sống khỏe</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        Copyright 2025 Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING CONTACT BUTTONS (GOLD CIRCLES)
+       ========================================================================== -->
+    <!-- ==========================================================================
+       MOBILE WEB APP BOTTOM NAVIGATION BAR (FIXED DOCK - APP LIKE EXPERIENCE)
+       ========================================================================== -->
+  <nav class="mobile-app-bottom-bar" aria-label="Điều hướng Web App">
+    <!-- 1. Menu bên trái -->
+    <button type="button" class="mobile-app-tab mobile-app-menu-btn" aria-label="Mở menu">
+      <i class="fa-solid fa-bars-staggered"></i>
+      <span>Menu</span>
+    </button>
+
+    <!-- 2. Dịch vụ -->
+    <a href="san-pham-dich-vu.html" class="mobile-app-tab active" aria-label="Sản phẩm và Dịch vụ">
+      <i class="fa-solid fa-notes-medical"></i>
+      <span>Dịch vụ</span>
+    </a>
+
+    <!-- 3. Nút Trang chủ ở giữa nổi bật (Floating App Circle) -->
+    <a href="index.html" class="mobile-app-tab mobile-app-tab-home " aria-label="Trang chủ">
+      <div class="mobile-app-home-circle">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <span>Trang chủ</span>
+    </a>
+
+    <!-- 4. Thăm khám / Hướng dẫn -->
+    <a href="huong-dan-tham-kham.html" class="mobile-app-tab " aria-label="Hướng dẫn thăm khám">
+      <i class="fa-solid fa-clipboard-check"></i>
+      <span>Thăm khám</span>
+    </a>
+
+    <!-- 5. Đặt lịch bên phải -->
+    <a href="dat-lich-kham.html" class="mobile-app-tab mobile-app-tab-booking " aria-label="Đặt lịch ngay">
+      <i class="fa-solid fa-calendar-check"></i>
+      <span>Đặt lịch</span>
+    </a>
+  </nav>
+
+  <div class="floating-contact-group">
+    <a href="https://zalo.me/0982375637" target="_blank" class="floating-btn-circle animated-shake" title="Chat Zalo">
+      <span style="font-weight: 800; font-size: 0.8rem; font-family: sans-serif;">Zalo</span>
+    </a>
+    <a href="https://zalo.me/0982375637" target="_blank" class="floating-btn-circle animated-shake" title="Facebook Messenger">
+      <i class="fa-brands fa-facebook-messenger"></i>
+    </a>
+    <a href="tel:0982375637" class="floating-btn-circle animated-shake" title="Gọi Hotline">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="#header" class="floating-btn-circle back-to-top-btn" title="Lên đầu trang">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <!-- Flatpickr JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/logo-takashij-transparent.png" alt="Takashij Clinic" style="height: 38px;">
+      <button class="mobile-drawer-close">&times;</button>
+    </div>
+    <ul class="mobile-menu-list">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="ve-chung-toi.html">Về chúng tôi</a></li>
+      <li>
+        <a href="san-pham-dich-vu.html">Sản phẩm &amp; Dịch vụ</a>
+        <div class="mobile-submenu">
+          <a href="san-pham-dich-vu.html">Tất cả Chuyên khoa</a>
+          <a href="khoa-noi-tong-hop.html">Khoa Nội tổng hợp</a>
+          <a href="khoa-ngoai.html">Khoa Ngoại</a>
+          <a href="khoa-chuan-doan-hinh-anh.html">Khoa Chẩn đoán hình ảnh</a>
+          <a href="khoa-xet-nghiem.html">Khoa Xét nghiệm</a>
+          <a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a>
+          <a href="khoa-da-lieu.html">Khoa Da liễu</a>
+          <a href="khoa-phu-khoa.html">Khoa Phụ khoa</a>
+        </div>
+      </li>
+      <li><a href="kien-thuc-ve-y-khoa.html">Kiến thức y khoa</a></li>
+      <li><a href="tin-tuc.html">Tin tức</a></li>
+      <li><a href="lien-he.html">Liên hệ</a></li>
+    </ul>
+
+    <div style="margin-top: 25px;">
+      <a href="dat-lich-kham.html" class="btn-primary" style="width: 100%; text-align: center; border-radius: 20px;">Đặt lịch ngay</a>
+    </div>
+  </div>
+
+</body>
+</html>
