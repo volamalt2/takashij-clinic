@@ -2348,13 +2348,68 @@ textarea.form-input {
 
 .floating-btn-circle:hover {
   transform: scale(1.12);
-  background: var(--gold-gradient-hover);
-  box-shadow: 0 8px 25px rgba(179, 142, 62, 0.65);
   color: var(--white);
 }
 
+/* 1. Zalo Brand Blue */
+.floating-contact-group a:nth-child(1),
+.floating-btn-circle.btn-zalo {
+  background: #0068FF;
+  color: #FFFFFF;
+  box-shadow: 0 6px 18px rgba(0, 104, 255, 0.45);
+}
+
+.floating-contact-group a:nth-child(1):hover,
+.floating-btn-circle.btn-zalo:hover {
+  background: #0056d6;
+  box-shadow: 0 8px 25px rgba(0, 104, 255, 0.65);
+  color: #FFFFFF;
+}
+
+/* 2. Messenger Brand Gradient */
+.floating-contact-group a:nth-child(2),
+.floating-btn-circle.btn-messenger {
+  background: linear-gradient(135deg, #00B2FE 0%, #006AFF 50%, #A033FF 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 18px rgba(0, 106, 255, 0.45);
+}
+
+.floating-contact-group a:nth-child(2):hover,
+.floating-btn-circle.btn-messenger:hover {
+  background: linear-gradient(135deg, #00C6FE 0%, #0078FF 50%, #B246FF 100%);
+  box-shadow: 0 8px 25px rgba(160, 51, 255, 0.65);
+  color: #FFFFFF;
+}
+
+/* 3. Phone / Hotline Brand Green */
+.floating-contact-group a:nth-child(3),
+.floating-btn-circle.btn-phone {
+  background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 18px rgba(39, 174, 96, 0.45);
+}
+
+.floating-contact-group a:nth-child(3):hover,
+.floating-btn-circle.btn-phone:hover {
+  background: linear-gradient(135deg, #34D078 0%, #219653 100%);
+  box-shadow: 0 8px 25px rgba(39, 174, 96, 0.65);
+  color: #FFFFFF;
+}
+
+/* 4. Back To Top Button */
+.floating-contact-group a:nth-child(4),
 .floating-btn-circle.back-to-top-btn {
+  background: var(--gold-gradient);
+  color: #FFFFFF;
+  box-shadow: 0 6px 18px rgba(179, 142, 62, 0.45);
   font-size: 1.3rem;
+}
+
+.floating-contact-group a:nth-child(4):hover,
+.floating-btn-circle.back-to-top-btn:hover {
+  background: var(--gold-gradient-hover);
+  box-shadow: 0 8px 25px rgba(179, 142, 62, 0.65);
+  color: #FFFFFF;
 }
 
 /* ==========================================================================
