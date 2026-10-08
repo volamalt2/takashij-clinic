@@ -353,40 +353,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 8. Expert Profile Modal Popup (Gold Luxury Border & Achievements)
   const expertData = {
-    'phan-toan-thang': {
-      name: 'PGS.TS.BS PHAN TOÀN THẮNG',
-      badge: 'CHUYÊN GIA TẾ BÀO GỐC QUỐC TẾ',
-      role: 'Chuyên gia hàng đầu thế giới về Y học tái tạo & Tế bào gốc',
-      workplace: 'Cố vấn Cấp cao Takashij Clinic | Phó Giáo sư tại Đại học Quốc gia Singapore (NUS)',
-      img: 'assets/images/experts/bac_thang_sharpened_v2.jpg',
-      specialties: 'Y học tái tạo đa mô, công nghệ tế bào gốc màng dây rốn (Umbilical Cord Lining), điều trị vết thương mãn tính và sẹo bỏng sâu, tái sinh cấu trúc da và mô liên kết sinh học.',
+    'kim-chi-na': {
+      name: 'BS. KIM CHI NA',
+      badge: 'PHỤ TRÁCH CHUYÊN MÔN',
+      role: 'Bác sĩ Chuyên khoa I Nội khoa / Nội tổng hợp',
+      workplace: 'Phòng khám Đa khoa Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC',
+      img: 'assets/images/experts/bs_kim_chi_na.jpg',
+      specialties: 'Bác sĩ có chuyên môn khám, chẩn đoán và quản lý các bệnh lý Nội khoa, với nền tảng đào tạo Chuyên khoa I Nội khoa và chứng chỉ hành nghề khám, chữa bệnh chuyên khoa Nội tổng hợp.',
       achievements: [
-        'Nhà khoa học đầu tiên trên thế giới phát minh và sở hữu bằng sáng chế độc quyền về công nghệ tách chiết tế bào gốc từ màng dây rốn tại hơn 40 quốc gia (Mỹ, Châu Âu, Nhật Bản, Singapore...).',
-        'Nhà sáng lập CellResearch Corporation – tập đoàn công nghệ sinh học tiên phong đưa giải pháp tế bào gốc ứng dụng vào y lâm sàng quốc tế.',
-        'Tác giả của hơn 100 công trình nghiên cứu và báo cáo khoa học được bình duyệt trên các tập san y học danh tiếng toàn cầu như The Lancet, Cell Stem Cell.'
+        'Thành viên của Hội nghị Khoa học thường niên lần thứ XV do Hiệp hội Y học Thành phố Hồ Chí Minh và Hội Đau Thành phố Hồ Chí Minh tổ chức.',
+        'Thành viên Hội Đái tháo đường Việt Nam (VADE).',
+        'Thành viên Liên đoàn Đái tháo đường Quốc tế (IDF).',
+        'Thành viên Liên đoàn Tim mạch Thế giới (WHF).'
       ],
       credentials: [
-        'Tiến sĩ Y khoa - Bác sĩ phẫu thuật xuất sắc tốt nghiệp tại Học viện Quân Y.',
-        'Nghiên cứu sinh và Giảng viên nghiên cứu sau Tiến sĩ tại Viện Nhi khoa Hoàng gia Anh và Đại học Oxford.',
-        'Hội viên thường trực Hội Y học Tái tạo Quốc tế (TERMIS) và Hiệp hội Liệu pháp Tế bào Quốc tế (ISCT).'
-      ]
-    },
-    'zen-kubota': {
-      name: 'BS. ZEN KUBOTA',
-      badge: 'CHUYÊN GIA Y HỌC DỰ PHÒNG NHẬT BẢN',
-      role: 'Giám đốc Phòng khám Tokyo Clinic | Chuyên gia Chống lão hóa',
-      workplace: 'Giám đốc Điều hành Tokyo Clinic (Tokyo, Nhật Bản) | Cố vấn Y khoa Quốc tế Takashij Clinic',
-      img: 'assets/images/experts/chuyengia-04.png',
-      specialties: 'Y học dự phòng đa tầng, nội khoa tổng quát, thẩm mỹ công nghệ cao & trẻ hóa tế bào không xâm lấn, kiểm soát nguy cơ tim mạch và tiểu đường theo chuẩn y tế Nhật Bản.',
-      achievements: [
-        'Hơn 20 năm kinh nghiệm lâm sàng và điều hành hệ thống phòng khám cao cấp tại khu trung tâm Ginza và Shinjuku (Tokyo).',
-        'Trực tiếp chăm sóc và cố vấn lộ trình sống khỏe, trẻ hóa toàn diện cho hàng ngàn chính khách, doanh nhân và ngôi sao hàng đầu Nhật Bản.',
-        'Tiên phong ứng dụng các phương pháp thải độc y khoa và liệu pháp truyền vi chất tăng cường sinh lực an toàn tuyệt đối.'
-      ],
-      credentials: [
-        'Tốt nghiệp Bác sĩ Y khoa tại Đại học Y Teikyo (Tokyo, Nhật Bản).',
-        'Thành viên thường trực Hội Y học Chống Lão hóa Nhật Bản (JAAM).',
-        'Ủy viên Hiệp hội Thẩm mỹ Nội khoa Nhật Bản (JSAPS).'
+        'Tốt nghiệp Bác sĩ Y khoa (M.D.) - Học viện Quân Y.',
+        'Chuyên khoa I Nội khoa – Trường Đại học Y Dược Huế.',
+        'Chứng chỉ hành nghề khám bệnh, chữa bệnh chuyên khoa Nội tổng hợp.',
+        'Chứng chỉ y khoa về Kiểm soát nhiễm khuẩn cơ bản.',
+        'Chứng chỉ Hồi sức cấp cứu dành cho bác sĩ.'
       ]
     },
     'atsushi-sato': {
@@ -395,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
       role: 'Giảng viên Khoa Chấn thương Chỉnh hình / Đại học Showa',
       workplace: 'Giảng viên - Bác sĩ phẫu thuật Khoa Chỉnh hình Đại học Y khoa Showa (Tokyo, Nhật Bản)',
       img: 'assets/images/experts/chuyengia-02.png',
-      specialties: 'Chẩn đoán và can thiệp bảo tồn bệnh lý cơ xương khớp, liệu pháp sinh học tái tạo sụn khớp (PRP, Cytokine therapy), phục hồi vận động không xâm lấn.',
+      specialties: 'Chẩn đoán và can thiệp bảo tồn bệnh lý cơ xương khớp, liệu pháp sinh học tái tạo sụn khớp, phục hồi vận động không xâm lấn.',
       achievements: [
         'Chuyên gia đầu ngành về điều trị thoái hóa khớp gối và cột sống bằng giải pháp y học tái tạo không cần can thiệp phẫu thuật mở.',
         'Báo cáo viên chính tại nhiều Hội nghị Chấn thương Chỉnh hình Quốc tế tại Nhật Bản, Hoa Kỳ và Châu Âu.',
@@ -405,24 +390,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'Tốt nghiệp Bác sĩ Chuyên khoa Chấn thương Chỉnh hình tại Đại học Y khoa Showa danh tiếng.',
         'Thành viên Hội Chấn thương Chỉnh hình Nhật Bản (JOA).',
         'Chứng chỉ Phục hồi chức năng thể thao chuyên nghiệp Nhật Bản (JASA).'
-      ]
-    },
-    'yohei-ko': {
-      name: 'TS.BS. YOHEI KO',
-      badge: 'VIỆN TRƯỞNG TẾ BÀO GỐC NHẬT BẢN',
-      role: 'Viện trưởng Viện Nghiên Cứu Tế Bào Gốc Nhật Bản',
-      workplace: 'Viện trưởng Viện Tế bào gốc Nhật Bản | Trưởng Khối Liệu pháp Miễn dịch Takashij Clinic',
-      img: 'assets/images/experts/chuyengia-01.png',
-      specialties: 'Liệu pháp tế bào miễn dịch tự thân (Tế bào diệt tự nhiên NK, T-cell), kích hoạt hệ miễn dịch phòng chống ung thư, y học phục hồi chức năng tạng.',
-      achievements: [
-        'Chủ trì nhiều đề tài nghiên cứu quốc gia của Nhật Bản về ứng dụng tế bào miễn dịch tự thân trong phòng ngừa tái phát u bướu.',
-        'Phát triển quy trình nuôi cấy và hoạt hóa tế bào NK đạt hoạt tính sinh học vượt trội tại phòng sạch chuẩn GMP-Grade.',
-        'Chuyển giao công nghệ trị liệu miễn dịch tiên tiến cho các trung tâm y tế quốc tế hàng đầu tại Tokyo, Osaka và Seoul.'
-      ],
-      credentials: [
-        'Tiến sĩ Y khoa chuyên ngành Sinh học Phân tử & Miễn dịch học tại Đại học Y khoa Tokyo.',
-        'Thành viên Hiệp hội Nghiên cứu Ung thư Nhật Bản (JCA).',
-        'Thành viên Hiệp hội Liệu pháp Miễn dịch Sinh học Quốc tế (iSBT).'
       ]
     },
     'shouichi-yamaguchi': {
@@ -443,22 +410,22 @@ document.addEventListener('DOMContentLoaded', () => {
         'Cố vấn chiến lược cho các tập đoàn Dược - Mỹ phẩm hàng đầu Nhật Bản.'
       ]
     },
-    'takashi-nakamura': {
-      name: 'BS. TAKASHI NAKAMURA',
-      badge: 'CHUYÊN GIA NHA KHOA KỸ THUẬT CAO',
-      role: 'Trưởng Khoa Nha Khoa Kỹ Thuật Cao & Thẩm Mỹ Takashij',
-      workplace: 'Nguyên Trưởng khoa Nha Thẩm mỹ Tokyo Dental Center | Trưởng khoa Nha Takashij Clinic',
-      img: 'assets/images/doctor-explain.jpg',
-      specialties: 'Cấy ghép Implant kỹ thuật số không đau, phục hình răng sứ thẩm mỹ bảo tồn tủy, chỉnh nha vô hình 3D, thiết kế nụ cười nhân trắc học Nhật Bản.',
+    'zen-kubota': {
+      name: 'BS. ZEN KUBOTA',
+      badge: 'CHUYÊN GIA Y HỌC DỰ PHÒNG NHẬT BẢN',
+      role: 'Giám đốc Phòng khám Tokyo Clinic | Chuyên gia Chống lão hóa',
+      workplace: 'Giám đốc Điều hành Tokyo Clinic (Tokyo, Nhật Bản) | Cố vấn Y khoa Quốc tế Takashij Clinic',
+      img: 'assets/images/experts/chuyengia-04.png',
+      specialties: 'Y học dự phòng đa tầng, nội khoa tổng quát, thẩm mỹ công nghệ cao & trẻ hóa tế bào không xâm lấn, kiểm soát nguy cơ tim mạch và tiểu đường theo chuẩn y tế Nhật Bản.',
       achievements: [
-        'Hơn 18 năm kinh nghiệm chuyên sâu trong lĩnh vực nha khoa tái tạo và phục hình thẩm mỹ chuẩn Nhật Bản.',
-        'Thực hiện thành công hơn 3.500 ca cấy ghép Implant và kiến tạo nụ cười hoàn mỹ cho các doanh nhân, nghệ sĩ.',
-        'Ứng dụng thành công công nghệ chẩn đoán CT Cone Beam 3D và scan trong miệng kỹ thuật số, lập kế hoạch điều trị chuẩn xác từng milimet.'
+        'Hơn 20 năm kinh nghiệm lâm sàng và điều hành hệ thống phòng khám cao cấp tại khu trung tâm Ginza và Shinjuku (Tokyo).',
+        'Trực tiếp chăm sóc và cố vấn lộ trình sống khỏe, trẻ hóa toàn diện cho hàng ngàn chính khách, doanh nhân và ngôi sao hàng đầu Nhật Bản.',
+        'Tiên phong ứng dụng các phương pháp thải độc y khoa và liệu pháp truyền vi chất tăng cường sinh lực an toàn tuyệt đối.'
       ],
       credentials: [
-        'Tốt nghiệp Bác sĩ Nha khoa tại Đại học Nha khoa Tokyo (Tokyo Dental College) danh tiếng.',
-        'Thành viên Hiệp hội Cấy ghép Nha khoa Quốc tế (ICOI).',
-        'Chứng chỉ Chỉnh nha Kỹ thuật số Hoa Kỳ & Nhật Bản.'
+        'Tốt nghiệp Bác sĩ Y khoa tại Đại học Y Teikyo (Tokyo, Nhật Bản).',
+        'Thành viên thường trực Hội Y học Chống Lão hóa Nhật Bản (JAAM).',
+        'Ủy viên Hiệp hội Thẩm mỹ Nội khoa Nhật Bản (JSAPS).'
       ]
     }
   };
@@ -550,5 +517,92 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 13. Knowledge Hub (Kiến Thức Y Khoa) Tab & Search Filter
+  const knowledgeTabs = document.querySelectorAll('.knowledge-tab-item');
+  const knowledgeCards = document.querySelectorAll('.news-articles-list article, .news-card-horizontal');
+  const knowledgeSearchInput = document.querySelector('.news-search-pill input');
+
+  if (knowledgeTabs.length > 0 && knowledgeCards.length > 0) {
+    function filterArticles(category, keyword = '') {
+      const kw = keyword.trim().toLowerCase();
+      let visibleCount = 0;
+
+      knowledgeCards.forEach(card => {
+        const cardCat = (card.getAttribute('data-category') || '').toLowerCase();
+        const cardText = card.textContent.toLowerCase();
+
+        const matchCat = (category === 'all' || !category || cardCat.includes(category));
+        const matchKw = (!kw || cardText.includes(kw));
+
+        if (matchCat && matchKw) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      let emptyMsg = document.getElementById('knowledge-empty-msg');
+      if (visibleCount === 0) {
+        if (!emptyMsg) {
+          emptyMsg = document.createElement('div');
+          emptyMsg.id = 'knowledge-empty-msg';
+          emptyMsg.style.cssText = 'text-align: center; padding: 40px 20px; color: #7A7264; font-size: 1.05rem; background: #FAF8F4; border-radius: 12px; border: 1px dashed #C39E57; margin-top: 20px;';
+          emptyMsg.innerHTML = '<i class="fa-solid fa-file-circle-question" style="font-size: 2rem; color: #C39E57; margin-bottom: 12px; display: block;"></i>Không tìm thấy bài viết phù hợp trong chuyên mục này.';
+          const parent = document.querySelector('.news-articles-list');
+          if (parent) parent.appendChild(emptyMsg);
+        } else {
+          emptyMsg.style.display = 'block';
+        }
+      } else if (emptyMsg) {
+        emptyMsg.style.display = 'none';
+      }
+    }
+
+    knowledgeTabs.forEach(tab => {
+      tab.addEventListener('click', function(e) {
+        e.preventDefault();
+        knowledgeTabs.forEach(t => {
+          t.classList.remove('active');
+          t.style.background = 'transparent';
+          t.style.color = '#6D4C24';
+        });
+        this.classList.add('active');
+        this.style.background = '#DFD1B5';
+        this.style.color = '#2C251E';
+
+        const cat = this.getAttribute('data-category') || 'all';
+        const kw = knowledgeSearchInput ? knowledgeSearchInput.value : '';
+        filterArticles(cat, kw);
+
+        const url = new URL(window.location);
+        if (cat === 'all') {
+          url.searchParams.delete('cat');
+        } else {
+          url.searchParams.set('cat', cat);
+        }
+        window.history.replaceState({}, '', url);
+      });
+    });
+
+    if (knowledgeSearchInput) {
+      knowledgeSearchInput.addEventListener('input', function() {
+        const activeTab = document.querySelector('.knowledge-tab-item.active');
+        const cat = activeTab ? (activeTab.getAttribute('data-category') || 'all') : 'all';
+        filterArticles(cat, this.value);
+      });
+    }
+
+    // Check URL param on page load
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialCat = urlParams.get('cat');
+    if (initialCat) {
+      const targetTab = document.querySelector(`.knowledge-tab-item[data-category="${initialCat}"]`);
+      if (targetTab) {
+        targetTab.click();
+      }
+    }
+  }
 });
 

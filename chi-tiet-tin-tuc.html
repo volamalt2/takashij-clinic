@@ -22,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/articles-data.js"></script>
 </head>
 <body class="single-post-page">
 
@@ -72,13 +73,13 @@
                   <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a href="san-pham-dich-vu.html">Tất cả Chuyên khoa</a></li>
                   <li><a href="khoa-noi-tong-hop.html">Khoa Nội tổng hợp</a></li>
-                  <li><a href="khoa-ngoai.html">Khoa Ngoại</a></li>
+                  <li><a href="khoa-co-xuong-khop.html">Khoa Cơ xương khớp</a></li>
+                  <li><a href="khoa-dinh-duong.html">Khoa Dinh dưỡng</a></li>
+                  <li><a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a></li>
                   <li><a href="khoa-chuan-doan-hinh-anh.html">Khoa Chẩn đoán hình ảnh</a></li>
                   <li><a href="khoa-xet-nghiem.html">Khoa Xét nghiệm</a></li>
-                  <li><a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a></li>
-                  <li><a href="khoa-da-lieu.html">Khoa Da liễu</a></li>
-                  <li><a href="khoa-phu-khoa.html">Khoa Phụ khoa</a></li>
                 </ul>
               </li>
               <li><a href="kien-thuc-ve-y-khoa.html">Kiến thức y khoa</a></li>
@@ -117,12 +118,12 @@
         <!-- LEFT COLUMN: ARTICLE BODY -->
         <main class="single-post-main">
           <div class="post-header" style="margin-bottom: 30px;">
-            <div style="display: flex; gap: 15px; align-items: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">
-              <span><i class="fa-regular fa-calendar" style="color: var(--secondary-color);"></i> 22.01.2026</span>
+            <div style="display: flex; gap: 15px; align-items: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px; flex-wrap: wrap;">
+              <span><i class="fa-regular fa-calendar" style="color: var(--secondary-color);"></i> <span id="post-date">12.01.2026</span></span>
               <span>•</span>
-              <span><i class="fa-regular fa-folder" style="color: var(--secondary-color);"></i> Y học Trường thọ</span>
+              <span><i class="fa-regular fa-folder" style="color: var(--secondary-color);"></i> <span id="post-category">Tiểu đường</span></span>
               <span>•</span>
-              <span><i class="fa-regular fa-user" style="color: var(--secondary-color);"></i> Ban Chuyên môn Takashij Clinic</span>
+              <span><i class="fa-regular fa-user" style="color: var(--secondary-color);"></i> <span id="post-author">BSCK I. Kim Chi Na – Phụ trách chuyên môn</span></span>
             </div>
 
             <h1 id="post-title" style="font-family: var(--font-serif); font-size: 2.4rem; color: #221D17; line-height: 1.35; margin-bottom: 20px;">
@@ -227,30 +228,28 @@
 
           <!-- RECENT POSTS -->
           <div style="background: #fff; border: 1px solid #ebd9b6; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
-            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #221D17; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 2px solid var(--secondary-color);">BÀI VIẾT MỚI NHẤT</h3>
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #221D17; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 2px solid var(--secondary-color);">BÀI VIẾT NỔI BẬT</h3>
             
-            <div style="display: flex; flex-direction: column; gap: 18px;">
+            <div id="sidebar-recent-posts" style="display: flex; flex-direction: column; gap: 18px;">
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="assets/images/news/close-up-japanese-family-having-fun-scaled.jpg" style="width: 75px; height: 60px; object-fit: cover; border-radius: 6px;">
+                <img src="assets/images/articles/tieu-duong-tuyp-2-cover.jpg" style="width: 75px; height: 60px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
                 <div>
-                  <h4 style="font-size: 0.92rem; line-height: 1.4; margin: 0 0 4px 0;"><a href="chi-tiet-tin-tuc.html?id=onecare-365" style="color: #2b251d;">OneCare 365 – Giải Pháp Chăm Sóc Sức Khỏe Chủ Động</a></h4>
-                  <span style="font-size: 0.8rem; color: #888;">22.01.2026</span>
+                  <h4 style="font-size: 0.92rem; line-height: 1.4; margin: 0 0 4px 0;"><a href="chi-tiet-tin-tuc.html?id=bien-chung-tieu-duong-tuyp-2" style="color: #2b251d;">Biến Chứng Tiểu Đường Tuýp 2</a></h4>
+                  <span style="font-size: 0.8rem; color: #888;">12.01.2026 • Tiểu Đường</span>
                 </div>
               </div>
-
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="assets/images/news/pretty-patient-physician-office-scaled.jpg" style="width: 75px; height: 60px; object-fit: cover; border-radius: 6px;">
+                <img src="assets/images/articles/bao-ve-tim-mach-cover.jpg" style="width: 75px; height: 60px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
                 <div>
-                  <h4 style="font-size: 0.92rem; line-height: 1.4; margin: 0 0 4px 0;"><a href="chi-tiet-tin-tuc.html?id=7-loi-ich" style="color: #2b251d;">7 Lợi Ích Tuyệt Vời Khi Chăm Sóc Sức Khỏe Định Kỳ</a></h4>
-                  <span style="font-size: 0.8rem; color: #888;">21.01.2026</span>
+                  <h4 style="font-size: 0.92rem; line-height: 1.4; margin: 0 0 4px 0;"><a href="chi-tiet-tin-tuc.html?id=bien-phap-bao-ve-tim-mach" style="color: #2b251d;">Biện Pháp Bảo Vệ Tim Mạch</a></h4>
+                  <span style="font-size: 0.8rem; color: #888;">08.01.2026 • Tim Mạch</span>
                 </div>
               </div>
-
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="assets/images/news/woman-relaxing-sauna-scaled.jpg" style="width: 75px; height: 60px; object-fit: cover; border-radius: 6px;">
+                <img src="assets/images/articles/mo-mau-cao-cover.jpg" style="width: 75px; height: 60px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
                 <div>
-                  <h4 style="font-size: 0.92rem; line-height: 1.4; margin: 0 0 4px 0;"><a href="chi-tiet-tin-tuc.html?id=deepoxy-detoxcell" style="color: #2b251d;">Liệu Pháp DeepOxy & DetoxCell – Thải Độc Từ Bên Trong</a></h4>
-                  <span style="font-size: 0.8rem; color: #888;">20.01.2026</span>
+                  <h4 style="font-size: 0.92rem; line-height: 1.4; margin: 0 0 4px 0;"><a href="chi-tiet-tin-tuc.html?id=mo-mau-cao-roi-loan-lipid" style="color: #2b251d;">Mỡ Máu Cao &amp; Rối Loạn Lipid</a></h4>
+                  <span style="font-size: 0.8rem; color: #888;">05.01.2026 • Mỡ Máu</span>
                 </div>
               </div>
             </div>
@@ -275,32 +274,69 @@
   <!-- DYNAMIC POST SWITCHER SCRIPT -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const posts = {
-        'onecare-365': {
-          title: 'OneCare 365 – Giải Pháp Chăm Sóc Sức Khỏe Chủ Động 365 Ngày Tại Takashij Clinic',
-          lead: 'Trong xã hội hiện đại, con người không chỉ mong muốn sống lâu mà còn muốn sống khỏe mạnh, hạnh phúc và trọn vẹn từng khoảnh khắc. Mô hình OneCare 365 tại Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC ra đời như một giải pháp chăm sóc y tế đồng hành 365 ngày.',
-          img: 'assets/images/phong-truyen-dich.jpg'
-        },
-        '7-loi-ich': {
-          title: '7 Lợi Ích Tuyệt Vời Khi Chăm Sóc Sức Khỏe Chủ Động Mỗi Năm',
-          lead: 'Trong y học hiện đại, câu nói “Phòng bệnh hơn chữa bệnh” chưa bao giờ đúng như ngày nay. Thay vì đợi đến khi cơ thể phát tín hiệu đau ốm, việc chủ động tầm soát giúp phát hiện sớm nguy cơ và tiết kiệm 80% chi phí điều trị.',
-          img: 'assets/images/phong-kham.jpg'
-        },
-        'deepoxy-detoxcell': {
-          title: 'Liệu Pháp DeepOxy & DetoxCell – Giải Pháp Thải Độc Và Trẻ Hóa Từ Bên Trong',
-          lead: 'Trong hành trình chăm sóc sức khỏe toàn diện, việc thanh lọc độc tố tế bào và làm chậm quá trình lão hóa đóng vai trò cốt lõi. Liệu pháp DeepOxy kết hợp DetoxCell mang lại giải pháp tái tạo năng lượng sống tự nhiên.',
-          img: 'assets/images/phong-hoi-phuc.jpg'
-        }
-      };
-
+      const articles = window.TAKASHIJ_ARTICLES || {};
       const urlParams = new URLSearchParams(window.location.search);
-      const postId = urlParams.get('id');
-      if (postId && posts[postId]) {
-        const post = posts[postId];
-        document.getElementById('post-title').textContent = post.title;
-        document.getElementById('post-breadcrumb-title').textContent = post.title;
-        document.getElementById('post-lead').textContent = post.lead;
-        document.getElementById('post-featured-img').src = post.img;
+      let postId = urlParams.get('id') || 'bien-chung-tieu-duong-tuyp-2';
+
+      const aliasMap = {
+        'onecare-365': '7-loi-ich-cham-soc-suc-khoe-chu-dong',
+        '7-loi-ich': '7-loi-ich-cham-soc-suc-khoe-chu-dong',
+        'deepoxy-detoxcell': 'che-do-dinh-duong-khoa-hoc'
+      };
+      if (!articles[postId] && aliasMap[postId]) {
+        postId = aliasMap[postId];
+      }
+
+      const currentPost = articles[postId] || articles['bien-chung-tieu-duong-tuyp-2'];
+
+      if (currentPost) {
+        document.title = currentPost.title + ' - TAKASHIJ CLINIC';
+        const breadcrumb = document.getElementById('post-breadcrumb-title');
+        if (breadcrumb) breadcrumb.textContent = currentPost.title;
+
+        const titleEl = document.getElementById('post-title');
+        if (titleEl) titleEl.textContent = currentPost.title;
+
+        const leadEl = document.getElementById('post-lead');
+        if (leadEl) leadEl.textContent = currentPost.lead;
+
+        const dateEl = document.getElementById('post-date');
+        if (dateEl) dateEl.textContent = currentPost.date;
+
+        const catEl = document.getElementById('post-category');
+        if (catEl) catEl.textContent = currentPost.categoryName || 'Y khoa';
+
+        const authorEl = document.getElementById('post-author');
+        if (authorEl) authorEl.textContent = currentPost.author;
+
+        const imgEl = document.getElementById('post-featured-img');
+        if (imgEl && currentPost.cover) {
+          imgEl.src = currentPost.cover;
+          imgEl.alt = currentPost.title;
+        }
+
+        const bodyEl = document.getElementById('post-body-content');
+        if (bodyEl && currentPost.content) {
+          bodyEl.innerHTML = currentPost.content;
+        }
+      }
+
+      // Populate sidebar recent posts
+      const sidebarContainer = document.getElementById('sidebar-recent-posts');
+      if (sidebarContainer && typeof articles === 'object' && Object.keys(articles).length > 0) {
+        const articleKeys = Object.keys(articles).filter(function(k) { return k !== postId; }).slice(0, 4);
+        sidebarContainer.innerHTML = articleKeys.map(function(k) {
+          const item = articles[k];
+          return '<div style="display: flex; gap: 12px; align-items: center;">' +
+            '<img src="' + item.cover + '" alt="' + item.title + '" style="width: 75px; height: 60px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">' +
+            '<div>' +
+              '<h4 style="font-size: 0.92rem; line-height: 1.4; margin: 0 0 4px 0;">' +
+                '<a href="chi-tiet-tin-tuc.html?id=' + item.id + '" style="color: #2b251d; text-decoration: none; font-weight: 600;">' + item.title + '</a>' +
+              '</h4>' +
+              '<span style="font-size: 0.8rem; color: #888;">' + item.date + ' • ' + item.categoryName + '</span>' +
+            '</div>' +
+          '</div>';
+        }).join('');
       }
     });
   </script>
@@ -332,7 +368,7 @@
         <div class="footer-info-item">
           <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
           <div>
-            <p>Giờ mở cửa<br><strong>08:00 - 17:30 (Thứ Hai đến Chủ Nhật)</strong></p>
+            <p>Giờ mở cửa<br><strong>08:00 - 17:00 (Thứ Hai đến Chủ Nhật)</strong></p>
           </div>
         </div>
       </div>
@@ -359,11 +395,11 @@
           <div class="footer-clinic-desc">
             <p style="font-weight: 700; color: #fff; margin-bottom: 4px;">Phòng khám Đa khoa Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC</p>
             <p>Chịu trách nhiệm chuyên môn:</p>
-            <p style="color: var(--secondary-color); font-weight: 600;">BSCK II. Nguyễn Tiến Dũng – Giám đốc chuyên môn</p>
+            <p style="color: var(--secondary-color); font-weight: 600;">BSCK I: Kim Chi Na – Phụ trách chuyên môn</p>
             <p style="margin-top: 10px;">Địa chỉ: 36 Nguyễn Quý Cảnh, phường Bình Trưng, TP Hồ Chí Minh.</p>
             <p>Hotline: 0982 375 637</p>
             <p>Email: info.takashij@gmail.com</p>
-            <p>Mã số doanh nghiệp: 0110406806</p>
+            <p>Mã số doanh nghiệp: 0318976763</p>
           </div>
         </div>
 
@@ -393,13 +429,12 @@
           </ul>
         </div>
 
-        <div class="footer-col">
+                <div class="footer-col">
           <h3>TIN TỨC</h3>
           <ul class="footer-links">
-            <li><a href="tin-tuc.html">Các sự kiện Trường thọ</a></li>
+            <li><a href="tin-tuc.html">Các thông tin chăm sóc sức khỏe</a></li>
             <li><a href="lien-he.html">Chăm sóc khách hàng</a></li>
-            <li><a href="tin-tuc.html">Takashij Retreat</a></li>
-            <li><a href="kien-thuc-ve-y-khoa.html">Medtalks - Hiểu đúng • Sống khỏe</a></li>
+            <li><a href="tin-tuc.html">Takashij Sống Khỏe chủ động</a></li>
           </ul>
         </div>
       </div>
@@ -485,12 +520,11 @@
         <div class="mobile-submenu">
           <a href="san-pham-dich-vu.html">Tất cả Chuyên khoa</a>
           <a href="khoa-noi-tong-hop.html">Khoa Nội tổng hợp</a>
-          <a href="khoa-ngoai.html">Khoa Ngoại</a>
+          <a href="khoa-co-xuong-khop.html">Khoa Cơ xương khớp</a>
+          <a href="khoa-dinh-duong.html">Khoa Dinh dưỡng</a>
+          <a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a>
           <a href="khoa-chuan-doan-hinh-anh.html">Khoa Chẩn đoán hình ảnh</a>
           <a href="khoa-xet-nghiem.html">Khoa Xét nghiệm</a>
-          <a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a>
-          <a href="khoa-da-lieu.html">Khoa Da liễu</a>
-          <a href="khoa-phu-khoa.html">Khoa Phụ khoa</a>
         </div>
       </li>
       <li><a href="kien-thuc-ve-y-khoa.html">Kiến thức y khoa</a></li>

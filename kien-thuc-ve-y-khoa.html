@@ -30,7 +30,7 @@
             <a href="index.html" class="brand-logo-link">
               <img src="assets/images/logo-takashij-transparent.png" alt="Takashij Clinic" class="brand-emblem" style="height: 52px; width: auto;">
               <div class="brand-text">
-                <span class="brand-sub" style="color: #8E6C38; font-weight: 600; font-size: 11px;">Viện Nghiên Cứu Sức Khỏe &amp; Nha Khoa</span>
+                <span class="brand-sub" style="color: #8E6C38; font-weight: 600; font-size: 11px;">Viện Nghiên Cứu Sức Khỏe</span>
                 <span class="brand-main" style="color: #2C251E; font-weight: 800; font-size: 20px;">TAKASHIJ <span style="color: #D4292B;">CLINIC</span></span>
               </div>
             </a>
@@ -68,12 +68,11 @@
                 <ul class="dropdown-menu">
                   <li><a href="san-pham-dich-vu.html">Tất cả Chuyên khoa</a></li>
                   <li><a href="khoa-noi-tong-hop.html">Khoa Nội tổng hợp</a></li>
-                  <li><a href="khoa-ngoai.html">Khoa Ngoại</a></li>
+                  <li><a href="khoa-co-xuong-khop.html">Khoa Cơ xương khớp</a></li>
+                  <li><a href="khoa-dinh-duong.html">Khoa Dinh dưỡng</a></li>
+                  <li><a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a></li>
                   <li><a href="khoa-chuan-doan-hinh-anh.html">Khoa Chẩn đoán hình ảnh</a></li>
                   <li><a href="khoa-xet-nghiem.html">Khoa Xét nghiệm</a></li>
-                  <li><a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a></li>
-                  <li><a href="khoa-da-lieu.html">Khoa Da liễu</a></li>
-                  <li><a href="khoa-phu-khoa.html">Khoa Phụ khoa</a></li>
                 </ul>
               </li>
               <li class="active"><a href="kien-thuc-ve-y-khoa.html">Kiến thức y khoa</a></li>
@@ -100,13 +99,15 @@
         KIẾN THỨC HỮU ÍCH
       </h1>
       
-      <!-- Category Pills Filter -->
-      <div class="knowledge-tabs-wrap" style="display: flex; justify-content: center; gap: 18px; margin-bottom: 30px; flex-wrap: wrap;">
-        <a href="kien-thuc-ve-y-khoa.html" class="knowledge-tab-item active" style="padding: 10px 28px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; background: #DFD1B5; color: #2C251E; text-decoration: none;">TIỂU ĐƯỜNG</a>
-        <a href="kien-thuc-ve-y-khoa.html?cat=tim-mach" class="knowledge-tab-item" style="padding: 10px 28px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">TIM MẠCH</a>
-        <a href="kien-thuc-ve-y-khoa.html?cat=mo-mau" class="knowledge-tab-item" style="padding: 10px 28px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">MỠ MÁU</a>
-        <a href="kien-thuc-ve-y-khoa.html?cat=xuong-khop" class="knowledge-tab-item" style="padding: 10px 28px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">XƯƠNG KHỚP</a>
-        <a href="kien-thuc-ve-y-khoa.html?cat=khac" class="knowledge-tab-item" style="padding: 10px 28px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">MỤC KHÁC</a>
+            <!-- Category Pills Filter -->
+      <div class="knowledge-tabs-wrap" style="display: flex; justify-content: center; gap: 14px; margin-bottom: 30px; flex-wrap: wrap;">
+        <a href="kien-thuc-ve-y-khoa.html" class="knowledge-tab-item active" data-category="all" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; background: #DFD1B5; color: #2C251E; text-decoration: none;">TẤT CẢ</a>
+        <a href="kien-thuc-ve-y-khoa.html?cat=tieu-duong" class="knowledge-tab-item" data-category="tieu-duong" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">TIỂU ĐƯỜNG</a>
+        <a href="kien-thuc-ve-y-khoa.html?cat=tim-mach" class="knowledge-tab-item" data-category="tim-mach" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">TIM MẠCH</a>
+        <a href="kien-thuc-ve-y-khoa.html?cat=mo-mau" class="knowledge-tab-item" data-category="mo-mau" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">MỠ MÁU</a>
+        <a href="kien-thuc-ve-y-khoa.html?cat=xuong-khop" class="knowledge-tab-item" data-category="xuong-khop" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">XƯƠNG KHỚP</a>
+        <a href="kien-thuc-ve-y-khoa.html?cat=dinh-duong" class="knowledge-tab-item" data-category="dinh-duong" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">DINH DƯỠNG</a>
+        <a href="kien-thuc-ve-y-khoa.html?cat=khac" class="knowledge-tab-item" data-category="khac" style="padding: 10px 24px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.95rem; color: #6D4C24; text-decoration: none;">MỤC KHÁC</a>
       </div>
 
       <!-- Right Search Pill -->
@@ -126,14 +127,14 @@
     <div class="container">
       <div class="news-grid-container" style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: start;">
         
-        <!-- MAIN ARTICLES FEED -->
+                <!-- MAIN ARTICLES FEED -->
         <div class="news-articles-list" style="display: flex; flex-direction: column; gap: 35px;">
           
-          <!-- Article 1: Large Featured Article -->
-          <article class="news-card-horizontal" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <!-- Article 1: TIỂU ĐƯỜNG -->
+          <article class="news-card-horizontal" data-category="tieu-duong" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
             <div class="news-card-thumb" style="height: 380px; width: 100%; overflow: hidden;">
-              <a href="chi-tiet-tin-tuc.html">
-                <img src="assets/images/news/top-view-world-heart-day-concept-with-stethoscope-scaled.jpg" alt="Biến Chứng Tiểu Đường Tuýp 2" style="width: 100%; height: 100%; object-fit: cover;">
+              <a href="chi-tiet-tin-tuc.html?id=bien-chung-tieu-duong-tuyp-2">
+                <img src="assets/images/articles/tieu-duong-tuyp-2-cover.jpg" alt="Biến Chứng Tiểu Đường Tuýp 2" style="width: 100%; height: 100%; object-fit: cover;">
               </a>
             </div>
             <div class="news-card-body" style="padding: 28px;">
@@ -141,56 +142,141 @@
                 <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>12.01.2026 • TIỂU ĐƯỜNG
               </div>
               <h2 class="news-card-title" style="font-family: var(--font-serif); font-size: 1.55rem; line-height: 1.4; color: #2C251E; margin-bottom: 14px;">
-                <a href="chi-tiet-tin-tuc.html" style="color: inherit; text-decoration: none;">Biến Chứng Tiểu Đường Tuýp 2 – Nhận Diện Sớm &amp; Giải Pháp Chủ Động Tại Takashij</a>
+                <a href="chi-tiet-tin-tuc.html?id=bien-chung-tieu-duong-tuyp-2" style="color: inherit; text-decoration: none;">Biến Chứng Tiểu Đường Tuýp 2 – Nhận Diện Sớm &amp; Giải Pháp Chủ Động Tại Takashij</a>
               </h2>
               <p class="news-card-excerpt" style="font-size: 0.98rem; line-height: 1.7; color: #5C5243; margin-bottom: 20px;">
-                Tiểu đường tuýp 2 diễn tiến thầm lặng qua nhiều năm. Khi không kiểm soát tốt đường huyết và chỉ số kháng insulin, các biến chứng lên mạch máu, thận, tim và mắt sẽ âm thầm phát triển. Khám tầm soát định kỳ tại Takashij Clinic giúp phát hiện sớm nguy cơ từ giai đoạn tiền tiểu đường.
+                Tiểu đường tuýp 2 không chỉ là một tình trạng đường huyết cao – đó là một hành trình sức khỏe lâu dài với nhiều hệ quả tiềm ẩn ảnh hưởng sâu rộng đến tim mạch, thận, mắt và hệ thần kinh nếu không được chú trọng kiểm soát đúng cách. Khám tầm soát định kỳ tại Takashij Clinic giúp phát hiện sớm nguy cơ từ giai đoạn tiền tiểu đường.
               </p>
-              <a href="chi-tiet-tin-tuc.html" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
+              <a href="chi-tiet-tin-tuc.html?id=bien-chung-tieu-duong-tuyp-2" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
             </div>
           </article>
 
-          <!-- Article 2 -->
-          <article class="news-card-horizontal" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <!-- Article 2: TIỂU ĐƯỜNG -->
+          <article class="news-card-horizontal" data-category="tieu-duong" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
             <div class="news-card-thumb" style="height: 340px; width: 100%; overflow: hidden;">
-              <a href="chi-tiet-tin-tuc.html">
-                <img src="assets/images/news/pretty-patient-physician-office-scaled.jpg" alt="Chế Độ Dinh Dưỡng Cho Người Bệnh Tiểu Đường" style="width: 100%; height: 100%; object-fit: cover;">
+              <a href="chi-tiet-tin-tuc.html?id=tam-soat-bien-chung-tieu-duong">
+                <img src="assets/images/articles/tam-soat-tieu-duong-cover.jpg" alt="Tầm Soát Biến Chứng Tiểu Đường" style="width: 100%; height: 100%; object-fit: cover;">
               </a>
             </div>
             <div class="news-card-body" style="padding: 28px;">
               <div class="news-card-date" style="font-size: 0.85rem; color: #8E6C38; margin-bottom: 8px; font-weight: 600;">
-                <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>08.01.2026 • TIỂU ĐƯỜNG
+                <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>10.01.2026 • TIỂU ĐƯỜNG
               </div>
               <h2 class="news-card-title" style="font-family: var(--font-serif); font-size: 1.55rem; line-height: 1.4; color: #2C251E; margin-bottom: 14px;">
-                <a href="chi-tiet-tin-tuc.html" style="color: inherit; text-decoration: none;">Chế Độ Dinh Dưỡng Chuẩn Y Khoa Giúp Hạ Đường Huyết Bền Vững Không Phụ Thuộc Thuốc</a>
+                <a href="chi-tiet-tin-tuc.html?id=tam-soat-bien-chung-tieu-duong" style="color: inherit; text-decoration: none;">Tầm Soát Biến Chứng Tiểu Đường Từ Sớm Cùng Takashij Clinic</a>
               </h2>
               <p class="news-card-excerpt" style="font-size: 0.98rem; line-height: 1.7; color: #5C5243; margin-bottom: 20px;">
-                Chế độ ăn ít chỉ số đường huyết (GI), tăng cường chất xơ hòa tan kết hợp phác đồ dinh dưỡng cá nhân hóa tại Takashij Clinic giúp ổn định đường huyết tự nhiên và phục hồi chức năng tuyến tụy.
+                Phần lớn biến chứng tiểu đường diễn tiến âm thầm trong nhiều năm, khiến người bệnh khó nhận biết. Khi triệu chứng rõ ràng mới được phát hiện, việc điều trị thường trở nên khó khăn. Gói tầm soát tại Takashij Clinic giúp phát hiện sớm tổn thương mạch máu nhỏ và bảo tồn chức năng cơ quan đích.
               </p>
-              <a href="chi-tiet-tin-tuc.html" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
+              <a href="chi-tiet-tin-tuc.html?id=tam-soat-bien-chung-tieu-duong" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
             </div>
           </article>
 
-          <!-- Article 3 -->
-          <article class="news-card-horizontal" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <!-- Article 3: TIM MẠCH -->
+          <article class="news-card-horizontal" data-category="tim-mach" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
             <div class="news-card-thumb" style="height: 340px; width: 100%; overflow: hidden;">
-              <a href="chi-tiet-tin-tuc.html">
-                <img src="assets/images/takashij_real/may-chup-ct-tam-soat-tim-mach.jpg" alt="Phòng Ngừa Xơ Vữa Động Mạch" style="width: 100%; height: 100%; object-fit: cover;">
+              <a href="chi-tiet-tin-tuc.html?id=bien-phap-bao-ve-tim-mach">
+                <img src="assets/images/articles/bao-ve-tim-mach-cover.jpg" alt="Biện Pháp Bảo Vệ Tim Mạch" style="width: 100%; height: 100%; object-fit: cover;">
               </a>
             </div>
             <div class="news-card-body" style="padding: 28px;">
               <div class="news-card-date" style="font-size: 0.85rem; color: #8E6C38; margin-bottom: 8px; font-weight: 600;">
-                <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>03.01.2026 • TIM MẠCH
+                <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>08.01.2026 • TIM MẠCH
               </div>
               <h2 class="news-card-title" style="font-family: var(--font-serif); font-size: 1.55rem; line-height: 1.4; color: #2C251E; margin-bottom: 14px;">
-                <a href="chi-tiet-tin-tuc.html" style="color: inherit; text-decoration: none;">Nhận Biết Sớm Triệu Chứng Xơ Vữa Động Mạch &amp; Đột Quỵ Sau Tuổi 45</a>
+                <a href="chi-tiet-tin-tuc.html?id=bien-phap-bao-ve-tim-mach" style="color: inherit; text-decoration: none;">Biện Pháp Bảo Vệ Tim Mạch Mà Ai Cũng Cần Biết</a>
               </h2>
               <p class="news-card-excerpt" style="font-size: 0.98rem; line-height: 1.7; color: #5C5243; margin-bottom: 20px;">
-                Thành mạch xơ cứng và lắng đọng cholesterol là nguyên nhân hàng đầu gây đột quỵ. Tầm soát chuyên sâu bằng siêu âm Doppler động mạch cảnh và chụp cắt lớp đa dãy giúp phát hiện sớm mảng xơ vữa trước khi có biến chứng.
+                Bệnh tim mạch hiện là nguyên nhân gây tử vong hàng đầu tại Việt Nam, nhưng phần lớn có thể phòng ngừa được nếu phát hiện sớm và chăm sóc đúng cách. Cùng Takashij Clinic điểm qua các biện pháp bảo vệ tim mạch toàn diện, kiểm soát xơ vữa và phòng ngừa đột quỵ hiệu quả.
               </p>
-              <a href="chi-tiet-tin-tuc.html" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
+              <a href="chi-tiet-tin-tuc.html?id=bien-phap-bao-ve-tim-mach" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
             </div>
           </article>
+
+          <!-- Article 4: MỠ MÁU -->
+          <article class="news-card-horizontal" data-category="mo-mau" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <div class="news-card-thumb" style="height: 340px; width: 100%; overflow: hidden;">
+              <a href="chi-tiet-tin-tuc.html?id=mo-mau-cao-roi-loan-lipid">
+                <img src="assets/images/articles/mo-mau-cao-cover.jpg" alt="Mỡ Máu Cao Và Rối Loạn Lipid" style="width: 100%; height: 100%; object-fit: cover;">
+              </a>
+            </div>
+            <div class="news-card-body" style="padding: 28px;">
+              <div class="news-card-date" style="font-size: 0.85rem; color: #8E6C38; margin-bottom: 8px; font-weight: 600;">
+                <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>05.01.2026 • MỠ MÁU
+              </div>
+              <h2 class="news-card-title" style="font-family: var(--font-serif); font-size: 1.55rem; line-height: 1.4; color: #2C251E; margin-bottom: 14px;">
+                <a href="chi-tiet-tin-tuc.html?id=mo-mau-cao-roi-loan-lipid" style="color: inherit; text-decoration: none;">Mỡ Máu Cao Và Rối Loạn Lipid? Khám Phá Cách Phòng Ngừa Chuẩn Y Khoa</a>
+              </h2>
+              <p class="news-card-excerpt" style="font-size: 0.98rem; line-height: 1.7; color: #5C5243; margin-bottom: 20px;">
+                Mỡ máu cao không đơn thuần là “nhiều mỡ trong máu”, mà là sự mất cân bằng giữa các thành phần lipid: tăng cholesterol xấu LDL, triglyceride và giảm cholesterol tốt HDL. Khi mỡ bám vào thành mạch, lòng mạch bị thu hẹp dẫn đến nguy cơ nhồi máu cơ tim.
+              </p>
+              <a href="chi-tiet-tin-tuc.html?id=mo-mau-cao-roi-loan-lipid" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <!-- Article 5: XƯƠNG KHỚP -->
+          <article class="news-card-horizontal" data-category="xuong-khop" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <div class="news-card-thumb" style="height: 340px; width: 100%; overflow: hidden;">
+              <a href="chi-tiet-tin-tuc.html?id=bao-ve-xuong-khop">
+                <img src="assets/images/articles/dau-nhuc-xuong-khop-cover.jpg" alt="Đau Nhức Xương Khớp" style="width: 100%; height: 100%; object-fit: cover;">
+              </a>
+            </div>
+            <div class="news-card-body" style="padding: 28px;">
+              <div class="news-card-date" style="font-size: 0.85rem; color: #8E6C38; margin-bottom: 8px; font-weight: 600;">
+                <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>03.01.2026 • XƯƠNG KHỚP
+              </div>
+              <h2 class="news-card-title" style="font-family: var(--font-serif); font-size: 1.55rem; line-height: 1.4; color: #2C251E; margin-bottom: 14px;">
+                <a href="chi-tiet-tin-tuc.html?id=bao-ve-xuong-khop" style="color: inherit; text-decoration: none;">Đau Nhức Xương Khớp? Hãy Bảo Vệ Khớp Cùng Takashij Clinic</a>
+              </h2>
+              <p class="news-card-excerpt" style="font-size: 0.98rem; line-height: 1.7; color: #5C5243; margin-bottom: 20px;">
+                Đau nhức xương khớp có thể xuất hiện ở bất kỳ độ tuổi nào. Nếu không được quan tâm và chăm sóc đúng cách, sụn khớp sẽ bị bào mòn nhanh chóng gây hạn chế vận động. Chuyên gia Takashij Clinic chia sẻ các giải pháp bảo tồn khớp không phẫu thuật.
+              </p>
+              <a href="chi-tiet-tin-tuc.html?id=bao-ve-xuong-khop" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <!-- Article 6: DINH DƯỠNG & MỤC KHÁC -->
+          <article class="news-card-horizontal" data-category="dinh-duong khac" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <div class="news-card-thumb" style="height: 340px; width: 100%; overflow: hidden;">
+              <a href="chi-tiet-tin-tuc.html?id=7-loi-ich-cham-soc-suc-khoe-chu-dong">
+                <img src="assets/images/articles/cham-soc-chu-dong-cover.jpg" alt="Chăm Sóc Sức Khỏe Chủ Động" style="width: 100%; height: 100%; object-fit: cover;">
+              </a>
+            </div>
+            <div class="news-card-body" style="padding: 28px;">
+              <div class="news-card-date" style="font-size: 0.85rem; color: #8E6C38; margin-bottom: 8px; font-weight: 600;">
+                <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>01.01.2026 • DINH DƯỠNG &amp; SỐNG KHỎE
+              </div>
+              <h2 class="news-card-title" style="font-family: var(--font-serif); font-size: 1.55rem; line-height: 1.4; color: #2C251E; margin-bottom: 14px;">
+                <a href="chi-tiet-tin-tuc.html?id=7-loi-ich-cham-soc-suc-khoe-chu-dong" style="color: inherit; text-decoration: none;">7 Lợi Ích Tuyệt Vời Khi Chăm Sóc Sức Khỏe Chủ Động Mỗi Năm</a>
+              </h2>
+              <p class="news-card-excerpt" style="font-size: 0.98rem; line-height: 1.7; color: #5C5243; margin-bottom: 20px;">
+                Thay vì đợi đến khi cơ thể xuất hiện triệu chứng, việc chủ động tầm soát giúp phát hiện bệnh từ giai đoạn tiền lâm sàng, thấu hiểu thể trạng, tiết kiệm chi phí điều trị và nâng cao tuổi thọ sinh học bền vững.
+              </p>
+              <a href="chi-tiet-tin-tuc.html?id=7-loi-ich-cham-soc-suc-khoe-chu-dong" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <!-- Article 7: DINH DƯỠNG -->
+          <article class="news-card-horizontal" data-category="dinh-duong" style="background: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #ebd9b6; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <div class="news-card-thumb" style="height: 340px; width: 100%; overflow: hidden;">
+              <a href="chi-tiet-tin-tuc.html?id=che-do-dinh-duong-khoa-hoc">
+                <img src="assets/images/articles/tam-soat-tieu-duong-2.png" alt="Chế Độ Dinh Dưỡng Khoa Học" style="width: 100%; height: 100%; object-fit: cover;">
+              </a>
+            </div>
+            <div class="news-card-body" style="padding: 28px;">
+              <div class="news-card-date" style="font-size: 0.85rem; color: #8E6C38; margin-bottom: 8px; font-weight: 600;">
+                <i class="fa-regular fa-calendar-days" style="margin-right: 6px;"></i>06.01.2026 • DINH DƯỠNG
+              </div>
+              <h2 class="news-card-title" style="font-family: var(--font-serif); font-size: 1.55rem; line-height: 1.4; color: #2C251E; margin-bottom: 14px;">
+                <a href="chi-tiet-tin-tuc.html?id=che-do-dinh-duong-khoa-hoc" style="color: inherit; text-decoration: none;">Chế Độ Dinh Dưỡng Chuẩn Y Khoa Cho Người Trưởng Thành &amp; Phục Hồi Tế Bào</a>
+              </h2>
+              <p class="news-card-excerpt" style="font-size: 0.98rem; line-height: 1.7; color: #5C5243; margin-bottom: 20px;">
+                Thực đơn cá nhân hóa với chỉ số GI thấp, giàu Omega-3 và chất chống oxy hóa tự nhiên giúp hạ đường huyết, đào thải mỡ máu, giảm tải gan thận và ngăn ngừa quá trình đường hóa nâng cao (AGEs).
+              </p>
+              <a href="chi-tiet-tin-tuc.html?id=che-do-dinh-duong-khoa-hoc" class="btn-primary" style="padding: 9px 24px; font-size: 0.9rem; border-radius: 20px;">Xem chi tiết</a>
+            </div>
+          </article>
+
         </div>
 
         <!-- RIGHT SIDEBAR (MATCHES live_kien_thuc.png) -->
@@ -234,15 +320,17 @@
 
             <!-- Categories Widget -->
             <div style="margin-top: 25px; padding-top: 20px; border-top: 1.5px solid #F0E8D8;">
-              <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #2C251E; margin-bottom: 15px;">
+                            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #2C251E; margin-bottom: 15px;">
                 Danh mục
               </h3>
               <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
-                <li><a href="kien-thuc-ve-y-khoa.html" style="color: #C39E57; font-weight: 600; text-decoration: none;">Kiến thức hữu ích</a></li>
-                <li><a href="kien-thuc-ve-y-khoa.html?cat=tieu-duong" style="color: #5C5243; text-decoration: none;">Tiểu đường (12)</a></li>
-                <li><a href="kien-thuc-ve-y-khoa.html?cat=tim-mach" style="color: #5C5243; text-decoration: none;">Tim mạch (8)</a></li>
-                <li><a href="kien-thuc-ve-y-khoa.html?cat=mo-mau" style="color: #5C5243; text-decoration: none;">Mỡ máu (6)</a></li>
-                <li><a href="kien-thuc-ve-y-khoa.html?cat=xuong-khop" style="color: #5C5243; text-decoration: none;">Xương khớp (9)</a></li>
+                <li><a href="kien-thuc-ve-y-khoa.html" style="color: #C39E57; font-weight: 600; text-decoration: none;">Tất cả kiến thức (7)</a></li>
+                <li><a href="kien-thuc-ve-y-khoa.html?cat=tieu-duong" style="color: #5C5243; text-decoration: none;">Tiểu đường (2)</a></li>
+                <li><a href="kien-thuc-ve-y-khoa.html?cat=tim-mach" style="color: #5C5243; text-decoration: none;">Tim mạch (1)</a></li>
+                <li><a href="kien-thuc-ve-y-khoa.html?cat=mo-mau" style="color: #5C5243; text-decoration: none;">Mỡ máu (1)</a></li>
+                <li><a href="kien-thuc-ve-y-khoa.html?cat=xuong-khop" style="color: #5C5243; text-decoration: none;">Xương khớp (1)</a></li>
+                <li><a href="kien-thuc-ve-y-khoa.html?cat=dinh-duong" style="color: #5C5243; text-decoration: none;">Dinh dưỡng (2)</a></li>
+                <li><a href="kien-thuc-ve-y-khoa.html?cat=khac" style="color: #5C5243; text-decoration: none;">Mục khác (1)</a></li>
               </ul>
             </div>
           </div>
@@ -275,7 +363,7 @@
         <div class="footer-info-item">
           <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
           <div>
-            <p>Giờ mở cửa<br><strong>08:00 - 17:30 (Thứ Hai đến Chủ Nhật)</strong></p>
+            <p>Giờ mở cửa<br><strong>08:00 - 17:00 (Thứ Hai đến Chủ Nhật)</strong></p>
           </div>
         </div>
       </div>
@@ -291,7 +379,7 @@
         <a href="index.html" class="brand-logo-link">
           <img src="assets/images/logo-takashij-transparent.png" alt="Takashij Clinic" class="brand-emblem" style="height: 48px; width: auto;">
           <div class="brand-text">
-            <span class="brand-sub" style="color: #E0CA89; font-size: 11px;">Viện Nghiên Cứu Sức Khỏe &amp; Nha Khoa</span>
+            <span class="brand-sub" style="color: #E0CA89; font-size: 11px;">Viện Nghiên Cứu Sức Khỏe</span>
             <span class="brand-main" style="color: #FFFFFF; font-size: 20px;">TAKASHIJ <span style="color: #D4292B;">CLINIC</span></span>
           </div>
         </a>
@@ -311,12 +399,12 @@
 
       <div class="footer-main-grid">
         <div class="footer-col">
-          <p><strong>Phòng khám Đa khoa Viện Nghiên Cứu Sức Khỏe &amp; Nha Khoa - TAKASHIJ CLINIC</strong></p>
-          <p>Chịu trách nhiệm chuyên môn:<br><strong>BSCK II. Nguyễn Tiến Dũng</strong> – Giám đốc chuyên môn</p>
+          <p><strong>Phòng khám Đa khoa Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC</strong></p>
+          <p>Chịu trách nhiệm chuyên môn:<br><strong>BSCK I: Kim Chi Na</strong> – Phụ trách chuyên môn</p>
           <p>Địa chỉ: 36 Nguyễn Quý Cảnh, phường Bình Trưng, TP Hồ Chí Minh.</p>
           <p>Hotline: 0982 375 637</p>
           <p>Email: info.takashij@gmail.com</p>
-          <p>Mã số doanh nghiệp: 0110406806</p>
+          <p>Mã số doanh nghiệp: 0318976763</p>
         </div>
 
         <div class="footer-col">
@@ -345,13 +433,12 @@
           </ul>
         </div>
 
-        <div class="footer-col">
+                <div class="footer-col">
           <h3>TIN TỨC</h3>
           <ul class="footer-links">
-            <li><a href="tin-tuc.html">Các sự kiện Trường thọ</a></li>
+            <li><a href="tin-tuc.html">Các thông tin chăm sóc sức khỏe</a></li>
             <li><a href="lien-he.html">Chăm sóc khách hàng</a></li>
-            <li><a href="tin-tuc.html">Takashij Retreat</a></li>
-            <li><a href="kien-thuc-ve-y-khoa.html">Medtalks - Hiểu đúng • Sống khỏe</a></li>
+            <li><a href="tin-tuc.html">Takashij Sống Khỏe chủ động</a></li>
           </ul>
         </div>
       </div>
@@ -435,12 +522,11 @@
         <div class="mobile-submenu">
           <a href="san-pham-dich-vu.html">Tất cả Chuyên khoa</a>
           <a href="khoa-noi-tong-hop.html">Khoa Nội tổng hợp</a>
-          <a href="khoa-ngoai.html">Khoa Ngoại</a>
+          <a href="khoa-co-xuong-khop.html">Khoa Cơ xương khớp</a>
+          <a href="khoa-dinh-duong.html">Khoa Dinh dưỡng</a>
+          <a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a>
           <a href="khoa-chuan-doan-hinh-anh.html">Khoa Chẩn đoán hình ảnh</a>
           <a href="khoa-xet-nghiem.html">Khoa Xét nghiệm</a>
-          <a href="khoa-y-hoc-co-truyen.html">Khoa Y học cổ truyền</a>
-          <a href="khoa-da-lieu.html">Khoa Da liễu</a>
-          <a href="khoa-phu-khoa.html">Khoa Phụ khoa</a>
         </div>
       </li>
       <li><a href="kien-thuc-ve-y-khoa.html">Kiến thức y khoa</a></li>

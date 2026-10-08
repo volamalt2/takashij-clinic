@@ -5010,8 +5010,9 @@ body.department-page {
 }
 
 .dept-sec-subheading {
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
   color: #2C251E;
   text-align: center;
   text-transform: uppercase;
@@ -5020,6 +5021,7 @@ body.department-page {
 }
 
 .dept-sec-intro {
+  font-family: var(--font-sans);
   font-size: 1rem;
   color: #5C5243;
   line-height: 1.75;
@@ -5038,8 +5040,9 @@ body.department-page {
 }
 
 .dept-beige-title {
-  font-size: 1rem;
-  font-weight: 800;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
   color: #2C251E;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -5057,6 +5060,7 @@ body.department-page {
 }
 
 .dept-dot-list li {
+  font-family: var(--font-sans);
   position: relative;
   margin-bottom: 10px;
   color: #443B33;
