@@ -393,11 +393,76 @@ button, input, textarea, select {
   background: var(--gold-gradient);
   color: var(--white);
   box-shadow: 0 4px 15px rgba(179, 142, 62, 0.35);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.header-top-actions .btn-primary:hover {
+/* Light Sweep Effect for "Đặt lịch ngay" */
+.header-top-actions .btn-primary,
+a[href*="dat-lich"].btn-primary,
+.btn-primary.btn-light-sweep {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.header-top-actions .btn-primary::before,
+a[href*="dat-lich"].btn-primary::before,
+.btn-primary.btn-light-sweep::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 55px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.4) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  animation: btnLightSweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  z-index: 2;
+}
+
+.header-top-actions .btn-primary:hover,
+a[href*="dat-lich"].btn-primary:hover,
+.btn-primary.btn-light-sweep:hover {
   background: var(--gold-gradient-hover);
   box-shadow: 0 6px 20px rgba(179, 142, 62, 0.5);
+}
+
+.header-top-actions .btn-primary:hover::before,
+a[href*="dat-lich"].btn-primary:hover::before,
+.btn-primary.btn-light-sweep:hover::before {
+  animation: btnLightSweepHover 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes btnLightSweep {
+  0% {
+    left: -100%;
+  }
+  30% {
+    left: 140%;
+  }
+  100% {
+    left: 140%;
+  }
+}
+
+@keyframes btnLightSweepHover {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 140%;
+  }
 }
 
 .header-top-actions .btn-outline {
@@ -419,17 +484,9 @@ button, input, textarea, select {
   box-shadow: 0 4px 15px rgba(179, 142, 62, 0.3);
 }
 
+/* Hide language switcher - Vietnamese only */
 .lang-switch {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--text-light);
-  cursor: pointer;
-  padding: 6px 12px;
-  border-radius: 4px;
-  border: 1px solid #e2e8f0;
+  display: none !important;
 }
 
 /* Slim sticky navigation bar matching Image 1 100% */
