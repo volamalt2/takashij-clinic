@@ -268,6 +268,9 @@ button, input, textarea, select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   background: var(--gold-gradient);
   color: var(--white);
   padding: 10px 26px;
@@ -293,6 +296,9 @@ button, input, textarea, select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   border: 1.5px solid var(--gold-primary);
   color: var(--secondary-color);
   background: rgba(224, 202, 137, 0.12);
@@ -466,6 +472,9 @@ a[href*="dat-lich"].btn-primary:hover::before,
 }
 
 .header-top-actions .btn-outline {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   border-radius: 52px;
   padding: 9px 22px;
   font-family: var(--font-sans);
@@ -482,6 +491,86 @@ a[href*="dat-lich"].btn-primary:hover::before,
   color: var(--white);
   border-color: transparent;
   box-shadow: 0 4px 15px rgba(179, 142, 62, 0.3);
+}
+
+/* ==========================================================================
+   SHINY REVEAL BUTTON HOVER EFFECT (FOR ALL OTHER BUTTONS)
+   ========================================================================== */
+.btn-outline,
+.header-top-actions .btn-outline,
+.btn-book-submit,
+.btn-book-guide,
+.expert-card-btn,
+.spdv-hero-btn,
+.services-hero-btn,
+.hero-btn:not([href*="dat-lich"]),
+.btn-primary:not(.header-top-actions .btn-primary):not([href*="dat-lich"]):not(.btn-light-sweep),
+.btn-shiny-reveal {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-outline::after,
+.header-top-actions .btn-outline::after,
+.btn-book-submit::after,
+.btn-book-guide::after,
+.expert-card-btn::after,
+.spdv-hero-btn::after,
+.services-hero-btn::after,
+.hero-btn:not([href*="dat-lich"])::after,
+.btn-primary:not(.header-top-actions .btn-primary):not([href*="dat-lich"]):not(.btn-light-sweep)::after,
+.btn-shiny-reveal::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -130%;
+  width: 65%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.25) 20%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.25) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 2;
+}
+
+.btn-outline:hover::after,
+.header-top-actions .btn-outline:hover::after,
+.btn-book-submit:hover::after,
+.btn-book-guide:hover::after,
+.expert-card-btn:hover::after,
+.expert-card:hover .expert-card-btn::after,
+.spdv-hero-btn:hover::after,
+.services-hero-btn:hover::after,
+.hero-btn:not([href*="dat-lich"]):hover::after,
+.btn-primary:not(.header-top-actions .btn-primary):not([href*="dat-lich"]):not(.btn-light-sweep):hover::after,
+.btn-shiny-reveal:hover::after {
+  animation: shinyReveal 0.75s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes shinyReveal {
+  0% {
+    left: -130%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 170%;
+    opacity: 0;
+  }
 }
 
 /* Hide language switcher - Vietnamese only */
@@ -795,6 +884,9 @@ a[href*="dat-lich"].btn-primary:hover::before,
 
 .hero-btn {
   display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   font-family: var(--font-serif);
   background: var(--gold-gradient);
   color: var(--white);
@@ -1499,6 +1591,9 @@ a[href*="dat-lich"].btn-primary:hover::before,
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   font-size: 0.88rem;
   font-weight: 600;
   color: #8E6C38;
@@ -2161,6 +2256,9 @@ textarea.form-input {
 }
 
 .btn-book-submit {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   background-color: var(--gold-btn);
   color: var(--white);
   padding: 12px 32px;
@@ -2177,6 +2275,9 @@ textarea.form-input {
 }
 
 .btn-book-guide {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   background-color: var(--white);
   color: var(--gold-btn);
   border: 2px solid var(--gold-btn);
