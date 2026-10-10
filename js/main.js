@@ -446,7 +446,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = expertData[expertKey];
       if (!data) return;
 
-      modalImg.src = data.img;
+      let imgSrc = data.img;
+      const logoEl = document.querySelector('.brand-emblem');
+      if (logoEl && logoEl.src && logoEl.src.includes('/wp-content/themes/')) {
+        const themeBase = logoEl.src.substring(0, logoEl.src.indexOf('/assets/'));
+        imgSrc = themeBase + '/' + data.img;
+      }
+
+      modalImg.src = imgSrc;
       modalImg.alt = data.name;
       modalBadge.textContent = data.badge;
       modalName.textContent = data.name;
