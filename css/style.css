@@ -5419,29 +5419,38 @@ body.department-page {
   margin: 0 auto 35px auto;
 }
 
-/* Beige Card with Bullets */
+/* Beige Card with Bullets - Enhanced High Contrast Card */
 .dept-beige-card {
-  background: #F7F5EE;
-  border-radius: 16px;
-  padding: 35px 40px;
-  margin-bottom: 30px;
-  border: 1px solid #EAE3D2;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 38px 42px;
+  margin-bottom: 35px;
+  border: 1px solid rgba(195, 158, 87, 0.35);
+  box-shadow: 0 12px 36px rgba(44, 37, 30, 0.08);
+  transition: all 0.3s ease;
+}
+
+.dept-beige-card:hover {
+  box-shadow: 0 18px 45px rgba(142, 108, 56, 0.12);
+  border-color: rgba(142, 108, 56, 0.5);
 }
 
 .dept-beige-title {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #2C251E;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   letter-spacing: 0.5px;
+  padding-left: 14px;
+  border-left: 4px solid #8E6C38;
 }
 
 .dept-dot-list {
   list-style: none;
-  padding-left: 18px;
-  margin: 0 0 25px 0;
+  padding-left: 22px;
+  margin: 0 0 28px 0;
 }
 
 .dept-dot-list:last-child {
@@ -5451,19 +5460,21 @@ body.department-page {
 .dept-dot-list li {
   font-family: var(--font-sans);
   position: relative;
-  margin-bottom: 10px;
-  color: #443B33;
-  font-size: 0.98rem;
+  margin-bottom: 12px;
+  color: #3C332A;
+  font-size: 1rem;
   line-height: 1.75;
+  font-weight: 450;
 }
 
 .dept-dot-list li::before {
-  content: "•";
+  content: "✔";
   position: absolute;
-  left: -18px;
+  left: -22px;
   color: #8E6C38;
-  font-size: 1.4rem;
-  top: -4px;
+  font-size: 0.95rem;
+  top: 1px;
+  font-weight: 700;
 }
 
 /* Twins Side-by-side Photos */
@@ -6277,33 +6288,42 @@ body.department-page {
 .dept-proc-step-item {
   display: flex;
   align-items: center;
-  gap: 18px;
-  background: #FAF8F4;
-  padding: 18px 22px;
-  border-radius: 12px;
-  border: 1px solid rgba(195, 158, 87, 0.15);
+  gap: 20px;
+  background: #FFFFFF;
+  padding: 22px 26px;
+  border-radius: 16px;
+  border: 1px solid rgba(195, 158, 87, 0.35);
+  box-shadow: 0 8px 24px rgba(44, 37, 30, 0.06);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dept-proc-step-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(142, 108, 56, 0.14);
+  border-color: #8E6C38;
 }
 
 .dept-proc-step-num {
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: linear-gradient(to top, #FFFFFF, #f4ba42);
-  color: #6D645D;
-  font-size: 26px;
+  background: linear-gradient(135deg, #8E6C38 0%, #C39E57 50%, #B89758 100%);
+  color: #FFFFFF;
+  font-size: 24px;
   font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 3px 10px rgba(244, 186, 66, 0.3);
+  box-shadow: 0 6px 16px rgba(142, 108, 56, 0.35);
+  border: 2px solid #FFFFFF;
 }
 
 .dept-proc-step-text {
-  color: #4A4A4A;
+  color: #2C251E;
   font-size: 1.05rem;
-  line-height: 1.45;
-  font-weight: 500;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 /* ==========================================================================
