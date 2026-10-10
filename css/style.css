@@ -1011,17 +1011,17 @@ a[href*="dat-lich"].btn-primary:hover::before,
 
 .pillar-item .pillar-title {
   font-family: var(--font-sans);
-  font-size: 19px;
+  font-size: 15.5px;
   font-weight: 700;
   color: #696155;
-  line-height: 1.32;
+  line-height: 1.35;
   text-transform: uppercase;
   transition: var(--transition-smooth);
 }
 
 .pillar-item.active .pillar-title {
   color: #8E6C38;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* ==========================================================================
@@ -1177,18 +1177,18 @@ a[href*="dat-lich"].btn-primary:hover::before,
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
   align-items: center;
 }
 
 .specialties-intro h2 {
   font-family: var(--font-serif);
-  font-size: 3.2rem;
-  line-height: 1.18;
+  font-size: clamp(2.2rem, 3.2vw, 3rem);
+  line-height: 1.22;
   color: #ffffff;
   font-weight: 400;
-  margin-bottom: 22px;
+  margin-bottom: 0;
   letter-spacing: 0.5px;
 }
 
@@ -1251,8 +1251,8 @@ a[href*="dat-lich"].btn-primary:hover::before,
 
 .facilities-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 45px;
   align-items: center;
   margin-bottom: 35px;
 }
@@ -1266,15 +1266,17 @@ a[href*="dat-lich"].btn-primary:hover::before,
 
 .facilities-header .sub {
   font-weight: 700;
-  color: var(--text-light);
+  color: #8E6C38;
   font-size: 1.05rem;
   margin-top: 8px;
+  letter-spacing: 1px;
 }
 
 .facilities-header p {
   color: var(--text-muted);
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  text-wrap: balance;
 }
 
 .facilities-carousel-wrap {
@@ -3392,12 +3394,13 @@ textarea.form-input {
 }
 
 .about-intro-text {
-  max-width: 950px;
+  max-width: 1040px;
   margin: 0 auto;
-  font-size: 1.18rem;
-  line-height: 1.85;
+  font-size: 1.15rem;
+  line-height: 1.8;
   color: #FFFFFF;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  text-wrap: balance;
 }
 
 .vision-mission-section {
@@ -3504,16 +3507,22 @@ textarea.form-input {
 
 .care-model-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 40px;
+  grid-template-columns: 1.28fr 1fr;
+  gap: 45px;
   align-items: center;
+}
+
+.care-model-intro h2.section-title {
+  font-size: clamp(1.85rem, 2.3vw, 2.35rem);
+  white-space: nowrap;
 }
 
 .care-model-intro h3 {
   font-family: var(--font-serif);
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 1.8vw, 1.85rem);
   color: var(--secondary-color);
   margin-bottom: 15px;
+  white-space: nowrap;
 }
 
 .care-model-levels {
@@ -4207,7 +4216,7 @@ textarea.form-input {
 
 .clinic-floors-header {
   text-align: center;
-  max-width: 820px;
+  max-width: 920px;
   margin: 0 auto 45px auto;
 }
 
@@ -4240,6 +4249,7 @@ textarea.form-input {
   color: #6A6052;
   line-height: 1.75;
   margin: 0;
+  text-wrap: balance;
 }
 
 /* 2-Column Floor Showcase Grid */
@@ -5247,18 +5257,18 @@ textarea.form-input {
 .dept-hero-modern.content-left .dept-hero-modern-content {
   margin-left: 0;
   margin-right: auto;
-  max-width: 490px;
+  max-width: 620px;
 }
 
 .dept-hero-modern-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.4rem, 3.8vw, 3.4rem);
+  font-size: clamp(2.2rem, 3.4vw, 3.1rem);
   font-weight: 700;
   color: #8E6C38;
-  line-height: 1.2;
+  line-height: 1.22;
   margin-bottom: 22px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .dept-hero-modern-desc {
@@ -6073,7 +6083,31 @@ body.department-page {
 }
 
 .spdv-hero-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   margin-bottom: 34px;
+}
+
+.spdv-benefit-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: baseline;
+  color: #ffffff;
+  font-size: clamp(1.05rem, 1.2vw, 1.18rem);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.spdv-benefit-row .spdv-time {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.spdv-benefit-row .spdv-label {
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
 
 .spdv-hero-benefits p {
@@ -6085,10 +6119,10 @@ body.department-page {
 }
 
 .spdv-hero-benefits strong {
-  font-weight: 800;
+  font-weight: 700;
   color: #ffffff;
   display: inline-block;
-  min-width: 82px;
+  min-width: 100px;
 }
 
 .spdv-hero-btn {
@@ -6403,6 +6437,11 @@ body.department-page {
   }
   .spdv-hero-benefits {
     margin-bottom: 20px;
+    gap: 8px;
+  }
+  .spdv-benefit-row {
+    grid-template-columns: 80px 1fr;
+    font-size: 0.92rem;
   }
   .spdv-hero-benefits p {
     font-size: 0.92rem;

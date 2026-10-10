@@ -57,8 +57,8 @@ window.TAKASHIJ_ARTICLES = {
   "7-loi-ich-cham-soc-suc-khoe-chu-dong": {
     "id": "7-loi-ich-cham-soc-suc-khoe-chu-dong",
     "title": "7 Lợi Ích Tuyệt Vời Khi Chăm Sóc Sức Khỏe Chủ Động Mỗi Năm",
-    "category": "dinh-duong",
-    "categoryName": "Dinh Dưỡng & Sống Khỏe",
+    "category": "khac",
+    "categoryName": "Sống Khỏe & Lối Sống",
     "date": "01.01.2026",
     "author": "Ban Chuyên môn Y khoa Takashij Clinic",
     "cover": "assets/images/articles/cham-soc-chu-dong-cover.jpg",

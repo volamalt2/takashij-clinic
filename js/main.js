@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'BS. KIM CHI NA',
       badge: 'PHỤ TRÁCH CHUYÊN MÔN',
       role: 'Bác sĩ Chuyên khoa I Nội khoa / Nội tổng hợp',
-      workplace: 'Phòng khám Đa khoa Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC',
+      workplace: 'Viện Nghiên cứu sức khỏe Takashij Clinic',
       img: 'assets/images/experts/bs_kim_chi_na.jpg',
       specialties: 'Bác sĩ có chuyên môn khám, chẩn đoán và quản lý các bệnh lý Nội khoa, với nền tảng đào tạo Chuyên khoa I Nội khoa và chứng chỉ hành nghề khám, chữa bệnh chuyên khoa Nội tổng hợp.',
       achievements: [
