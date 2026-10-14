@@ -1,3 +1,17 @@
+/*
+Theme Name: Takashij Clinic Theme
+Theme URI: https://takashij.com.vn/
+Author: Takashij Medical Center Team
+Author URI: https://takashij.com.vn/
+Description: Theme phòng khám đa khoa & nha khoa chuẩn quốc tế Takashij Clinic.
+Version: 2.1.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+Text Domain: takashij-theme
+*/
+
 /* ==========================================================================
    TAKASHIJ CLINIC - THEME STYLESHEET
    Takashij Clinic Official Theme Stylesheet
@@ -9,7 +23,7 @@
 /* EB Garamond (Local font files) */
 @font-face {
   font-family: 'EB Garamond';
-  src: url('../assets/fonts/EBGaramond-Regular.ttf') format('truetype');
+  src: url('assets/fonts/EBGaramond-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -17,7 +31,7 @@
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('../assets/fonts/EBGaramond-Medium.ttf') format('truetype');
+  src: url('assets/fonts/EBGaramond-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -25,7 +39,7 @@
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('../assets/fonts/EBGaramond-SemiBold.ttf') format('truetype');
+  src: url('assets/fonts/EBGaramond-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -33,7 +47,7 @@
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('../assets/fonts/EBGaramond-Bold.ttf') format('truetype');
+  src: url('assets/fonts/EBGaramond-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -41,7 +55,7 @@
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('../assets/fonts/EBGaramond-ExtraBold.ttf') format('truetype');
+  src: url('assets/fonts/EBGaramond-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -50,7 +64,7 @@
 /* Google Sans (Font phụ - Local font files) */
 @font-face {
   font-family: 'Google Sans';
-  src: url('../assets/fonts/GoogleSans-Regular.ttf') format('truetype');
+  src: url('assets/fonts/GoogleSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -58,7 +72,7 @@
 
 @font-face {
   font-family: 'Google Sans';
-  src: url('../assets/fonts/GoogleSans-Medium.ttf') format('truetype');
+  src: url('assets/fonts/GoogleSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -66,7 +80,7 @@
 
 @font-face {
   font-family: 'Google Sans';
-  src: url('../assets/fonts/GoogleSans-Bold.ttf') format('truetype');
+  src: url('assets/fonts/GoogleSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -74,7 +88,7 @@
 
 @font-face {
   font-family: 'VLFRIZQUADRATASTD';
-  src: url('../assets/fonts/VLFRIZQUADRATASTD.ttf') format('truetype');
+  src: url('assets/fonts/VLFRIZQUADRATASTD.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -82,7 +96,7 @@
 
 @font-face {
   font-family: 'SF-Pro-Display';
-  src: url('../assets/fonts/SF-Pro-Display-Light.ttf') format('truetype');
+  src: url('assets/fonts/SF-Pro-Display-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -90,7 +104,7 @@
 
 @font-face {
   font-family: 'SF-Pro-Display';
-  src: url('../assets/fonts/SF-Pro-Display-Regular.ttf') format('truetype');
+  src: url('assets/fonts/SF-Pro-Display-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -98,7 +112,7 @@
 
 @font-face {
   font-family: 'SF-Pro-Display';
-  src: url('../assets/fonts/SF-Pro-Display-Bold.ttf') format('truetype');
+  src: url('assets/fonts/SF-Pro-Display-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -321,11 +335,42 @@ button, input, textarea, select {
    HEADER & NAVIGATION
    ========================================================================== */
 .site-header {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   background: var(--white);
   z-index: 1000;
-  transition: var(--transition-smooth);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Offset when WordPress Admin Bar is visible */
+.admin-bar .site-header {
+  top: 32px;
+}
+@media screen and (max-width: 782px) {
+  .admin-bar .site-header {
+    top: 46px;
+  }
+}
+
+/* Scrolled state: Subtle luxury elevation & compact padding */
+.site-header.scrolled {
+  box-shadow: 0 6px 25px rgba(28, 22, 14, 0.12), 0 1px 3px rgba(195, 158, 87, 0.18);
+}
+
+.site-header.scrolled .header-top {
+  padding: 5px 0;
+}
+
+.site-header.scrolled .brand-emblem {
+  height: 46px;
+}
+
+.site-header.scrolled .header-bottom {
+  padding: 8px 0;
 }
 
 .header-top {
@@ -578,15 +623,15 @@ a[href*="dat-lich"].btn-primary:hover::before,
   display: none !important;
 }
 
-/* Slim sticky navigation bar matching Image 1 100% */
+/* Navigation bar inside sticky header */
 .header-bottom {
-  position: sticky;
-  top: 0;
+  position: relative;
   width: 100%;
   z-index: 999;
   background: var(--white);
   padding: 12px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: padding 0.3s ease;
 }
 
 .header-bottom-inner {
@@ -819,19 +864,19 @@ a[href*="dat-lich"].btn-primary:hover::before,
 }
 
 .hero-slide-1 {
-  background-image: url('../assets/images/banner-chinh.jpg');
+  background-image: url('assets/images/banner-chinh.jpg');
 }
 
 .hero-slide-2 {
-  background-image: url('../assets/images/phong-truyen-dich.jpg');
+  background-image: url('assets/images/phong-truyen-dich.jpg');
 }
 
 .hero-slide-3 {
-  background-image: url('../assets/images/sanh-vip.jpg');
+  background-image: url('assets/images/sanh-vip.jpg');
 }
 
 .hero-slide-4 {
-  background-image: url('../assets/images/phong-kham.jpg');
+  background-image: url('assets/images/phong-kham.jpg');
 }
 
 .hero-slide-container {
@@ -1158,7 +1203,7 @@ a[href*="dat-lich"].btn-primary:hover::before,
 .specialties-section {
   position: relative;
   padding: 100px 0;
-  background-image: url('../assets/images/specialties-bg.jpg');
+  background-image: url('assets/images/specialties-bg.jpg');
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -3361,7 +3406,7 @@ textarea.form-input {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('../assets/images/ve-chung-toi-hero.jpg') center center / cover no-repeat;
+  background: url('assets/images/ve-chung-toi-hero.jpg') center center / cover no-repeat;
   padding: 100px 20px 80px 20px;
 }
 
@@ -6045,7 +6090,7 @@ body.department-page {
    ========================================================================== */
 .spdv-hero-banner {
   background-color: #07090c;
-  background-image: url('../assets/images/depts/onecare-hero.png');
+  background-image: url('assets/images/depts/onecare-hero.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
@@ -7358,7 +7403,7 @@ body.department-page {
 .facility-hero-section {
   position: relative;
   padding: 110px 0 70px 0;
-  background: linear-gradient(180deg, rgba(20, 15, 10, 0.72) 0%, rgba(28, 20, 12, 0.90) 100%), url('../assets/images/facilities/full/banner-chinh-lounge.jpg') center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(20, 15, 10, 0.72) 0%, rgba(28, 20, 12, 0.90) 100%), url('assets/images/facilities/full/banner-chinh-lounge.jpg') center/cover no-repeat;
   color: #FFFFFF;
   text-align: center;
 }
@@ -8563,3 +8608,472 @@ body.department-page {
     padding-bottom: 15px;
   }
 }
+
+/* ==========================================================================
+   SMART AUTO-FIT HERO BANNERS (BẢO VỆ TỰ ĐỘNG CHỐNG VỠ ẢNH BANNER)
+   ========================================================================== */
+.takashij-page-hero {
+  position: relative;
+  min-height: 380px;
+  max-height: 480px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #1A1612;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.takashij-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(16, 28, 39, 0.48) 0%, rgba(16, 28, 39, 0.88) 100%);
+  z-index: 1;
+}
+
+.takashij-hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.takashij-hero-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  color: #F7EED7;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.takashij-hero-subtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.7;
+  max-width: 780px;
+  margin: 0 auto;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.takashij-breadcrumb-bar {
+  background: #FAF7F2;
+  padding: 14px 0;
+  border-bottom: 1px solid #ebd9b6;
+  font-size: 0.9rem;
+}
+
+.takashij-breadcrumb-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.takashij-breadcrumb-content a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.takashij-breadcrumb-content a:hover {
+  color: var(--secondary-color);
+}
+
+.takashij-breadcrumb-content .sep {
+  color: #c7b99c;
+}
+
+.takashij-breadcrumb-content .current {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   RICH TYPOGRAPHY CHO THÂN BÀI VIẾT (POST-BODY-CONTENT & ENTRY-CONTENT)
+   Chuẩn soạn thảo trực quan không cần code: h2-h4, p, list, quote, table, img
+   ========================================================================== */
+.post-body-content,
+.entry-content {
+  color: #383127;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.post-body-content h1,
+.entry-content h1 {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: #221D17;
+  margin: 35px 0 18px 0;
+  font-weight: 700;
+}
+
+.post-body-content h2,
+.entry-content h2 {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  color: #221D17;
+  margin: 38px 0 16px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #C39E57;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.post-body-content h3,
+.entry-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: #2C251E;
+  margin: 30px 0 14px 0;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.post-body-content h4,
+.entry-content h4 {
+  font-size: 1.2rem;
+  color: #3a3227;
+  margin: 24px 0 10px 0;
+  font-weight: 700;
+}
+
+.post-body-content p,
+.entry-content p {
+  margin-bottom: 18px;
+}
+
+.post-body-content strong,
+.post-body-content b,
+.entry-content strong,
+.entry-content b {
+  color: #221D17;
+  font-weight: 700;
+}
+
+.post-body-content ul,
+.entry-content ul {
+  list-style: disc;
+  padding-left: 26px;
+  margin-bottom: 22px;
+}
+
+.post-body-content ol,
+.entry-content ol {
+  list-style: decimal;
+  padding-left: 26px;
+  margin-bottom: 22px;
+}
+
+.post-body-content li,
+.entry-content li {
+  margin-bottom: 8px;
+  line-height: 1.75;
+}
+
+.post-body-content blockquote,
+.entry-content blockquote {
+  background: #FAF7F2;
+  border-left: 5px solid #C39E57;
+  padding: 20px 24px;
+  border-radius: 0 10px 10px 0;
+  margin: 28px 0;
+  font-style: italic;
+  color: #474035;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.post-body-content img,
+.entry-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 22px auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.post-body-content figure,
+.entry-content figure {
+  margin: 25px auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.post-body-content figcaption,
+.entry-content figcaption {
+  font-size: 0.88rem;
+  color: #777;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.post-body-content table,
+.entry-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 28px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ebd9b6;
+}
+
+.post-body-content th,
+.entry-content th {
+  background: #FAF7F2;
+  color: #2C251E;
+  font-weight: 700;
+  padding: 13px 16px;
+  border: 1px solid #ebd9b6;
+  text-align: left;
+}
+
+.post-body-content td,
+.entry-content td {
+  padding: 12px 16px;
+  border: 1px solid #ebd9b6;
+  color: #474035;
+}
+
+.post-body-content tr:nth-child(even),
+.entry-content tr:nth-child(even) {
+  background: #fbf9f5;
+}
+
+/* ==========================================================================
+   TƯƠNG THÍCH TRÌNH DỰNG ELEMENTOR & RESPONSIVE
+   ========================================================================== */
+.elementor-template-page {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.elementor-template-page .elementor-section-wrap {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .takashij-page-hero {
+    min-height: 320px;
+  }
+  .takashij-hero-title {
+    font-size: 2.2rem;
+  }
+  .single-post-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .single-post-main {
+    padding: 30px 22px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .takashij-page-hero {
+    min-height: 260px;
+    padding: 40px 15px;
+  }
+  .takashij-hero-title {
+    font-size: 1.8rem;
+  }
+  .takashij-hero-subtitle {
+    font-size: 0.98rem;
+  }
+}
+
+/* ==========================================================================
+   KHOA Y HỌC CỔ TRUYỀN: SERVICE DESCRIPTION GALLERY SECTION
+   ========================================================================== */
+.yhoc-gallery-section {
+  background: #FAF8F5;
+  padding: 75px 0 65px 0;
+  border-top: 1px solid rgba(195, 158, 87, 0.15);
+  border-bottom: 1px solid rgba(195, 158, 87, 0.15);
+}
+
+.yhoc-gallery-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 45px auto;
+}
+
+.yhoc-gallery-tag {
+  display: inline-block;
+  background: rgba(195, 158, 87, 0.15);
+  color: #8E6C38;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 18px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(195, 158, 87, 0.3);
+}
+
+.yhoc-gallery-title {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #2C251E;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.yhoc-gallery-title span {
+  color: #8E6C38;
+}
+
+.yhoc-gallery-desc {
+  font-size: 1.05rem;
+  color: #5C5243;
+  line-height: 1.7;
+}
+
+.yhoc-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.yhoc-gallery-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(195, 158, 87, 0.22);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+}
+
+.yhoc-gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(142, 108, 56, 0.12);
+  border-color: rgba(195, 158, 87, 0.5);
+}
+
+.yhoc-card-thumb-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: #2C251E;
+}
+
+.yhoc-card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.yhoc-gallery-card:hover .yhoc-card-thumb {
+  transform: scale(1.08);
+}
+
+.yhoc-card-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(44, 37, 30, 0.85);
+  backdrop-filter: blur(8px);
+  color: #E0CA89;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(224, 202, 137, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 2;
+}
+
+.yhoc-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.yhoc-card-title {
+  font-family: var(--font-serif, "EB Garamond", serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2C251E;
+  margin-bottom: 10px;
+  line-height: 1.35;
+  transition: color 0.25s ease;
+}
+
+.yhoc-gallery-card:hover .yhoc-card-title {
+  color: #8E6C38;
+}
+
+.yhoc-card-desc {
+  font-size: 0.94rem;
+  color: #5C5243;
+  line-height: 1.65;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.yhoc-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(195, 158, 87, 0.2);
+}
+
+.yhoc-tag-pill {
+  background: #FAF7F2;
+  color: #8E6C38;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(195, 158, 87, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (max-width: 991px) {
+  .yhoc-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .yhoc-gallery-title {
+    font-size: 1.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .yhoc-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .yhoc-card-thumb-wrap {
+    height: 210px;
+  }
+  .yhoc-gallery-title {
+    font-size: 1.65rem;
+  }
+  .yhoc-gallery-section {
+    padding: 50px 0 45px 0;
+  }
+}
+

@@ -6,12 +6,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Sticky Header
   const header = document.querySelector('.site-header');
+  if (header) {
+    const checkHeaderScroll = () => {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+    window.addEventListener('scroll', checkHeaderScroll, { passive: true });
+    checkHeaderScroll();
+  }
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
 
     // Back to top button visibility
     const backToTopBtn = document.querySelector('.back-to-top-btn');
