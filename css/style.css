@@ -23,7 +23,7 @@ Text Domain: takashij-theme
 /* EB Garamond (Local font files) */
 @font-face {
   font-family: 'EB Garamond';
-  src: url('assets/fonts/EBGaramond-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/EBGaramond-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -31,7 +31,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('assets/fonts/EBGaramond-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/EBGaramond-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -39,7 +39,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('assets/fonts/EBGaramond-SemiBold.ttf') format('truetype');
+  src: url('../assets/fonts/EBGaramond-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -47,7 +47,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('assets/fonts/EBGaramond-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/EBGaramond-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -55,7 +55,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'EB Garamond';
-  src: url('assets/fonts/EBGaramond-ExtraBold.ttf') format('truetype');
+  src: url('../assets/fonts/EBGaramond-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,7 @@ Text Domain: takashij-theme
 /* Google Sans (Font phụ - Local font files) */
 @font-face {
   font-family: 'Google Sans';
-  src: url('assets/fonts/GoogleSans-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/GoogleSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -72,7 +72,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'Google Sans';
-  src: url('assets/fonts/GoogleSans-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/GoogleSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -80,7 +80,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'Google Sans';
-  src: url('assets/fonts/GoogleSans-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/GoogleSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -88,7 +88,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'VLFRIZQUADRATASTD';
-  src: url('assets/fonts/VLFRIZQUADRATASTD.ttf') format('truetype');
+  src: url('../assets/fonts/VLFRIZQUADRATASTD.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -96,7 +96,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'SF-Pro-Display';
-  src: url('assets/fonts/SF-Pro-Display-Light.ttf') format('truetype');
+  src: url('../assets/fonts/SF-Pro-Display-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -104,7 +104,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'SF-Pro-Display';
-  src: url('assets/fonts/SF-Pro-Display-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/SF-Pro-Display-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -112,7 +112,7 @@ Text Domain: takashij-theme
 
 @font-face {
   font-family: 'SF-Pro-Display';
-  src: url('assets/fonts/SF-Pro-Display-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/SF-Pro-Display-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -864,19 +864,19 @@ a[href*="dat-lich"].btn-primary:hover::before,
 }
 
 .hero-slide-1 {
-  background-image: url('assets/images/banner-chinh.jpg');
+  background-image: url('../assets/images/banner-chinh.jpg');
 }
 
 .hero-slide-2 {
-  background-image: url('assets/images/phong-truyen-dich.jpg');
+  background-image: url('../assets/images/phong-truyen-dich.jpg');
 }
 
 .hero-slide-3 {
-  background-image: url('assets/images/sanh-vip.jpg');
+  background-image: url('../assets/images/sanh-vip.jpg');
 }
 
 .hero-slide-4 {
-  background-image: url('assets/images/phong-kham.jpg');
+  background-image: url('../assets/images/phong-kham.jpg');
 }
 
 .hero-slide-container {
@@ -1203,7 +1203,7 @@ a[href*="dat-lich"].btn-primary:hover::before,
 .specialties-section {
   position: relative;
   padding: 100px 0;
-  background-image: url('assets/images/specialties-bg.jpg');
+  background-image: url('../assets/images/specialties-bg.jpg');
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -3406,7 +3406,7 @@ textarea.form-input {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('assets/images/ve-chung-toi-hero.jpg') center center / cover no-repeat;
+  background: url('../assets/images/ve-chung-toi-hero.jpg') center center / cover no-repeat;
   padding: 100px 20px 80px 20px;
 }
 
@@ -6090,7 +6090,7 @@ body.department-page {
    ========================================================================== */
 .spdv-hero-banner {
   background-color: #07090c;
-  background-image: url('assets/images/depts/onecare-hero.png');
+  background-image: url('../assets/images/depts/onecare-hero.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
@@ -7403,7 +7403,7 @@ body.department-page {
 .facility-hero-section {
   position: relative;
   padding: 110px 0 70px 0;
-  background: linear-gradient(180deg, rgba(20, 15, 10, 0.72) 0%, rgba(28, 20, 12, 0.90) 100%), url('assets/images/facilities/full/banner-chinh-lounge.jpg') center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(20, 15, 10, 0.72) 0%, rgba(28, 20, 12, 0.90) 100%), url('../assets/images/facilities/full/banner-chinh-lounge.jpg') center/cover no-repeat;
   color: #FFFFFF;
   text-align: center;
 }
