@@ -1765,9 +1765,11 @@ a[href*="dat-lich"].btn-primary:hover::before,
 
 .expert-modal-avatar-frame {
   position: relative;
-  width: 170px;
-  height: 170px;
-  margin-bottom: 20px;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .expert-modal-avatar {
@@ -1780,20 +1782,21 @@ a[href*="dat-lich"].btn-primary:hover::before,
 }
 
 .expert-modal-badge {
-  position: absolute;
-  bottom: -6px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
+  margin: 6px auto 10px auto;
   background: var(--gold-gradient);
   color: #FFFFFF;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  padding: 4px 12px;
+  padding: 5px 14px;
   border-radius: 20px;
-  white-space: nowrap;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  white-space: normal;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.3;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .expert-modal-name {
@@ -2014,26 +2017,28 @@ a[href*="dat-lich"].btn-primary:hover::before,
     width: 100% !important;
   }
   .expert-modal-avatar-frame {
-    width: 130px !important;
-    height: 130px !important;
-    margin-bottom: 14px !important;
+    width: 120px !important;
+    height: 120px !important;
+    margin-bottom: 8px !important;
   }
   .expert-modal-badge {
     position: static !important;
     transform: none !important;
     display: inline-block !important;
-    margin-top: 8px !important;
+    margin: 6px auto 8px auto !important;
     white-space: normal !important;
     text-align: center !important;
-    max-width: 94% !important;
+    max-width: 90% !important;
     font-size: 0.72rem !important;
+    line-height: 1.3 !important;
     padding: 4px 12px !important;
   }
   .expert-modal-name {
-    font-size: 1.25rem !important;
-    margin-top: 10px !important;
+    font-size: 1.22rem !important;
+    margin-top: 4px !important;
     margin-bottom: 6px !important;
     text-align: center !important;
+    clear: both !important;
   }
   .expert-modal-role {
     font-size: 0.88rem !important;
