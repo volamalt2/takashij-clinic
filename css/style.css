@@ -3299,7 +3299,7 @@ textarea.form-input {
     min-height: auto !important;
     padding: 0 !important;
     overflow: hidden !important;
-    background: #1b1612;
+    background: #F8F6F0 !important;
   }
 
   .hero-swiper {
@@ -3362,6 +3362,7 @@ textarea.form-input {
     margin: -24px 0 28px 0 !important;
     padding: 0 16px !important;
     z-index: 10 !important;
+    background: transparent !important;
   }
 
   .pillars-floating-bar {
