@@ -3026,6 +3026,68 @@ textarea.form-input {
     gap: 20px !important;
   }
 
+  /* Experts Section on Mobile & Tablet: 4 Visible Grid Cards */
+  .experts-swiper {
+    overflow: visible !important;
+    padding: 10px 0 !important;
+  }
+  .experts-swiper .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    transform: none !important;
+    width: 100% !important;
+  }
+  .experts-swiper .swiper-slide {
+    width: 100% !important;
+    margin: 0 !important;
+    height: auto !important;
+    display: flex !important;
+  }
+  .expert-card {
+    min-height: auto !important;
+    height: 100% !important;
+    padding: 20px 12px 18px 12px !important;
+    border-radius: 16px !important;
+  }
+  .expert-img-wrap {
+    width: 100px !important;
+    height: 100px !important;
+    margin-bottom: 12px !important;
+  }
+  .expert-role {
+    font-size: 0.72rem !important;
+    min-height: 38px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 6px !important;
+  }
+  .expert-name {
+    font-size: 0.98rem !important;
+    min-height: 44px !important;
+    line-height: 1.25 !important;
+  }
+  .expert-card-divider {
+    margin-top: 8px !important;
+    margin-bottom: 10px !important;
+    width: 32px !important;
+  }
+  .expert-card-btn {
+    font-size: 0.74rem !important;
+    padding: 6px 10px !important;
+    gap: 5px !important;
+    border-radius: 16px !important;
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .expert-card-btn span {
+    white-space: normal !important;
+    line-height: 1.2 !important;
+  }
+  .expert-card-btn i {
+    font-size: 0.7rem !important;
+  }
+
   /* 1. Mobile Header: Clean, Luxury, No Overlap */
   .site-header {
     position: sticky;

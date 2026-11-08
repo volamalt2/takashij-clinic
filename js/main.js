@@ -265,24 +265,22 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     });
 
-    // Experts Swiper
-    new Swiper('.experts-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 25,
-      loop: true,
-      autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.experts-next',
-        prevEl: '.experts-prev',
-      },
-      breakpoints: {
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 4 },
-      }
-    });
+    // Experts Swiper (Only run Swiper on desktop >= 992px, on mobile/tablet display 4-card grid)
+    if (window.innerWidth >= 992) {
+      new Swiper('.experts-swiper', {
+        slidesPerView: 4,
+        spaceBetween: 25,
+        loop: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: '.experts-next',
+          prevEl: '.experts-prev',
+        }
+      });
+    }
 
     // Testimonials Swiper
     new Swiper('.testimonials-swiper', {
