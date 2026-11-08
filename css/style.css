@@ -3165,10 +3165,13 @@ textarea.form-input {
 
   /* 2. Floating Contact Buttons repositioned above bottom dock */
   .floating-contact-group {
-    bottom: 78px !important;
+    position: fixed !important;
+    top: auto !important;
+    bottom: 74px !important;
     right: 8px !important;
+    transform: none !important;
     gap: 6px !important;
-    z-index: 99 !important;
+    z-index: 999 !important;
   }
 
   .floating-btn-circle {
@@ -5037,8 +5040,90 @@ textarea.form-input {
 
 @media (max-width: 991px) {
   .news-grid-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr !important;
+    gap: 35px !important;
+  }
+  .news-articles-list,
+  .news-feed-list {
+    width: 100% !important;
+  }
+  .news-card-horizontal,
+  .news-feed-card {
+    width: 100% !important;
+    border-radius: 14px !important;
+  }
+  .news-card-thumb {
+    height: 220px !important;
+    max-height: 240px !important;
+  }
+  .news-card-body {
+    padding: 20px 16px !important;
+  }
+  .news-card-title,
+  .news-card-title a {
+    font-size: 1.22rem !important;
+    line-height: 1.35 !important;
+  }
+  .news-card-excerpt {
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+  }
+  /* Knowledge category tabs scrollable / wrapped cleanly */
+  .knowledge-tabs-wrap {
+    display: flex !important;
+    gap: 8px !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 6px 4px 12px 4px !important;
+    margin-bottom: 18px !important;
+    flex-wrap: nowrap !important;
+    scrollbar-width: none !important;
+  }
+  .knowledge-tabs-wrap::-webkit-scrollbar {
+    display: none !important;
+  }
+  .knowledge-tab-item {
+    flex-shrink: 0 !important;
+    padding: 7px 16px !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap !important;
+  }
+  /* Search pill on mobile */
+  .news-search-pill-wrap {
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+  }
+  .news-search-pill {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  /* Sidebar featured articles on mobile */
+  .news-sidebar {
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+  .news-trending-card {
+    padding: 18px 14px !important;
+    border-radius: 14px !important;
+  }
+  .news-trending-item {
+    gap: 12px !important;
+    align-items: flex-start !important;
+  }
+  .news-trending-thumb {
+    width: 80px !important;
+    height: 65px !important;
+    flex-shrink: 0 !important;
+  }
+  .news-trending-body {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+  .news-trending-body h4 {
+    font-size: 0.88rem !important;
+    line-height: 1.38 !important;
+    word-break: break-word !important;
   }
 }
 
