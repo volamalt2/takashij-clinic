@@ -1957,93 +1957,125 @@ a[href*="dat-lich"].btn-primary:hover::before,
   justify-content: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .expert-modal-backdrop {
-    padding: 12px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
   }
   .expert-modal-dialog {
-    max-height: 94vh;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 92vh !important;
+    max-height: 92vh !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transform: none !important;
+  }
+  .expert-modal-backdrop.is-open .expert-modal-dialog {
+    transform: none !important;
   }
   .expert-modal-content {
-    border-radius: 16px;
-    max-height: 94vh;
+    border-radius: 18px !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    overflow: hidden !important;
   }
   .expert-modal-close {
-    top: 10px;
-    right: 10px;
-    width: 38px;
-    height: 38px;
-    font-size: 1.15rem;
-    z-index: 30;
+    position: absolute !important;
+    top: 12px !important;
+    right: 12px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1.15rem !important;
+    z-index: 99 !important;
+    background: #FAF7F2 !important;
+    border: 1.5px solid #C39E57 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
   }
   .expert-modal-body {
-    grid-template-columns: 1fr;
-    max-height: calc(94vh - 8px);
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 auto !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
   }
   .expert-modal-sidebar {
-    border-right: none;
-    border-bottom: 1.5px solid rgba(195, 158, 87, 0.25);
-    padding: 24px 16px 20px 16px;
+    border-right: none !important;
+    border-bottom: 1.5px solid rgba(195, 158, 87, 0.25) !important;
+    padding: 24px 16px 20px 16px !important;
+    flex-shrink: 0 !important;
+    width: 100% !important;
   }
   .expert-modal-avatar-frame {
-    width: 140px;
-    height: 140px;
-    margin-bottom: 16px;
+    width: 130px !important;
+    height: 130px !important;
+    margin-bottom: 14px !important;
   }
   .expert-modal-badge {
-    position: static;
-    transform: none;
-    display: inline-block;
-    margin-top: 8px;
-    white-space: normal;
-    text-align: center;
-    max-width: 92%;
-    font-size: 0.72rem;
-    padding: 4px 12px;
+    position: static !important;
+    transform: none !important;
+    display: inline-block !important;
+    margin-top: 8px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    max-width: 94% !important;
+    font-size: 0.72rem !important;
+    padding: 4px 12px !important;
   }
   .expert-modal-name {
-    font-size: 1.25rem;
-    margin-top: 10px;
-    margin-bottom: 6px;
-    text-align: center;
+    font-size: 1.25rem !important;
+    margin-top: 10px !important;
+    margin-bottom: 6px !important;
+    text-align: center !important;
   }
   .expert-modal-role {
-    font-size: 0.88rem;
-    text-align: center;
-    white-space: normal;
-    word-break: break-word;
-    margin-bottom: 8px;
+    font-size: 0.88rem !important;
+    text-align: center !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    margin-bottom: 8px !important;
   }
   .expert-modal-workplace {
-    font-size: 0.82rem;
-    text-align: center;
-    margin-bottom: 16px;
+    font-size: 0.82rem !important;
+    text-align: center !important;
+    margin-bottom: 16px !important;
   }
   .expert-modal-contact-box {
-    margin-top: 4px;
-    padding: 12px;
+    margin-top: 4px !important;
+    padding: 12px !important;
+    width: 100% !important;
+    max-width: 360px !important;
   }
   .expert-modal-hotline {
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 10px;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
   }
   .expert-modal-book-btn {
-    white-space: normal;
-    font-size: 0.88rem;
-    padding: 10px 14px;
+    white-space: normal !important;
+    font-size: 0.88rem !important;
+    padding: 10px 14px !important;
   }
   .expert-modal-main {
-    padding: 24px 16px;
-    gap: 20px;
+    padding: 22px 16px !important;
+    gap: 20px !important;
+    flex-shrink: 0 !important;
+    width: 100% !important;
   }
   .expert-modal-block-header h4 {
-    font-size: 1.05rem;
+    font-size: 1.05rem !important;
   }
   .expert-modal-specialties,
   .expert-modal-exp-list li {
-    font-size: 0.88rem;
-    line-height: 1.55;
+    font-size: 0.88rem !important;
+    line-height: 1.55 !important;
   }
 }
 
@@ -3906,6 +3938,31 @@ textarea.form-input {
   }
   .care-model-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .care-model-intro h2.section-title {
+    font-size: clamp(1.4rem, 5vw, 1.85rem) !important;
+    white-space: normal !important;
+    line-height: 1.3 !important;
+    word-break: break-word !important;
+  }
+  .care-model-intro h3 {
+    font-size: clamp(1.1rem, 4vw, 1.45rem) !important;
+    white-space: normal !important;
+    line-height: 1.35 !important;
+    word-break: break-word !important;
+    margin-bottom: 12px !important;
+  }
+  .care-model-intro h2 span,
+  .care-model-intro h3 span {
+    white-space: normal !important;
+  }
+  .care-level-badge {
+    font-size: 0.92rem;
+    padding: 14px 18px;
+    white-space: normal !important;
+    word-break: break-word !important;
+    line-height: 1.4;
   }
   .service-cards-grid {
     grid-template-columns: 1fr;
