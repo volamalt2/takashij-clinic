@@ -825,6 +825,76 @@
     </div>
   </div>
 
+  <!-- ==========================================================================
+       EXPERT PROFILE MODAL POPUP (GOLD LUXURY BORDER & ROUNDED CORNERS)
+       ========================================================================== -->
+  <div class="expert-modal-backdrop" id="expertModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="expert-modal-dialog">
+      <div class="expert-modal-content">
+        <!-- Gold Luxury Close Button -->
+        <button type="button" class="expert-modal-close" aria-label="Đóng popup">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="expert-modal-body">
+          <!-- Left Column: Expert Identity & Booking -->
+          <div class="expert-modal-sidebar">
+            <div class="expert-modal-avatar-frame">
+              <img src="" alt="" class="expert-modal-avatar" id="modalExpertImg">
+            </div>
+            <div class="expert-modal-badge" id="modalExpertBadge">CHUYÊN GIA QUỐC TẾ</div>
+            <h3 class="expert-modal-name" id="modalExpertName"></h3>
+            <div class="expert-modal-role" id="modalExpertRole"></div>
+            <div class="expert-modal-workplace" id="modalExpertWorkplace"></div>
+            
+            <div class="expert-modal-contact-box">
+              <div class="expert-modal-hotline">
+                <i class="fa-solid fa-phone-volume"></i>
+                <div>
+                  <span class="hotline-label">Hotline tư vấn trực tiếp:</span>
+                  <a href="tel:0982375637" class="hotline-val">0982 375 637</a>
+                </div>
+              </div>
+              <a href="dat-lich-kham.html" class="btn-primary expert-modal-book-btn">
+                <i class="fa-regular fa-calendar-check"></i> Đặt lịch tư vấn ưu tiên
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Medical Specialties, Achievements & Qualifications -->
+          <div class="expert-modal-main">
+            <!-- Specialties -->
+            <div class="expert-modal-block">
+              <div class="expert-modal-block-header">
+                <i class="fa-solid fa-stethoscope"></i>
+                <h4>LĨNH VỰC CHUYÊN MÔN</h4>
+              </div>
+              <p class="expert-modal-specialties" id="modalExpertSpecialties"></p>
+            </div>
+
+            <!-- Career Achievements -->
+            <div class="expert-modal-block">
+              <div class="expert-modal-block-header">
+                <i class="fa-solid fa-award"></i>
+                <h4>THÀNH TỰU &amp; DẤU ẤN SỰ NGHIỆP</h4>
+              </div>
+              <ul class="expert-modal-list" id="modalExpertAchievements"></ul>
+            </div>
+
+            <!-- Credentials & Organizations -->
+            <div class="expert-modal-block">
+              <div class="expert-modal-block-header">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h4>QUÁ TRÌNH ĐÀO TẠO &amp; HIỆP HỘI Y KHOA</h4>
+              </div>
+              <ul class="expert-modal-list" id="modalExpertCredentials"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- FLOATING TOOLS -->
   <div style="position: fixed; right: 22px; bottom: 25px; display: flex; flex-direction: column; gap: 12px; z-index: 999;">
     <a href="https://zalo.me/0961869818" style="width: 48px; height: 48px; border-radius: 50%; background: #0068FF; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" target="_blank" title="Zalo">Zalo</a>
