@@ -18,8 +18,31 @@ Text Domain: takashij-theme
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap');
 
 /* ==================== TYPOGRAPHY (@font-face) ==================== */
+
+/* Standard, Non-stylized Ampersand (&) for Playfair Display - Thay dấu & cách điệu bằng dấu & gốc */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aXo.woff2') format('woff2'),
+       local('Montserrat-Bold'), local('Montserrat Bold'), local('Montserrat'), local('Arial Bold'), local('Arial');
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0026;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aXo.woff2') format('woff2'),
+       local('Montserrat'), local('Arial');
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0026;
+}
+
 /* EB Garamond (Local font files) */
 @font-face {
   font-family: 'EB Garamond';
@@ -177,7 +200,12 @@ Text Domain: takashij-theme
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
   font-size: 17px;
+}
+
+section[id], div[id] {
+  scroll-margin-top: 90px;
 }
 
 @media (min-width: 1400px) {
@@ -252,6 +280,16 @@ button, input, textarea, select {
 }
 
 @media (max-width: 768px) {
+  .section-title,
+  .facilities-header h2,
+  .booking-form-wrap h2,
+  .dept-booking-title,
+  .contact-map-section h2,
+  .footer-top-title,
+  .spdv-hero-title,
+  h1, h2, h3 {
+    letter-spacing: normal !important;
+  }
   .container,
   .container-wide {
     padding-left: 16px;
@@ -2424,7 +2462,9 @@ textarea.form-input {
   margin-top: 10px;
 }
 
-.btn-book-submit {
+.btn-book-submit,
+.dept-booking-actions button[type="submit"],
+.dept-booking-actions .btn-primary {
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -2438,12 +2478,15 @@ textarea.form-input {
   transition: var(--transition-smooth);
 }
 
-.btn-book-submit:hover {
+.btn-book-submit:hover,
+.dept-booking-actions button[type="submit"]:hover,
+.dept-booking-actions .btn-primary:hover {
   background-color: #6e5a35;
   transform: translateY(-2px);
 }
 
-.btn-book-guide {
+.btn-book-guide,
+.dept-booking-actions .btn-outline {
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -2458,7 +2501,8 @@ textarea.form-input {
   transition: var(--transition-smooth);
 }
 
-.btn-book-guide:hover {
+.btn-book-guide:hover,
+.dept-booking-actions .btn-outline:hover {
   background-color: var(--gold-btn);
   color: var(--white);
 }
@@ -6438,7 +6482,7 @@ body.department-page {
   font-family: var(--font-serif);
   font-size: clamp(2.6rem, 3.6vw, 3.8rem);
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: normal;
   line-height: 1.15;
   color: #ffffff;
   margin-bottom: 14px;
@@ -6957,7 +7001,7 @@ body.department-page {
 .nutri-hero-inner {
   position: relative;
   z-index: 2;
-  max-width: 720px;
+  max-width: 860px;
 }
 
 .nutri-hero-tag {
@@ -6998,24 +7042,29 @@ body.department-page {
 
 .nutri-hero-badges-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px;
   margin-bottom: 30px;
 }
 
 .nutri-hero-badge-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.88);
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 10px;
   border: 1px solid rgba(195, 158, 87, 0.28);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: #2C251E;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  white-space: nowrap;
+}
+
+.nutri-hero-badge-item span {
+  white-space: nowrap;
 }
 
 .nutri-hero-badge-item i {
@@ -7756,6 +7805,13 @@ body.department-page {
   }
 }
 
+@media (max-width: 900px) {
+  .nutri-hero-badges-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+}
+
 @media (max-width: 768px) {
   .nutri-hero-badges-grid {
     grid-template-columns: 1fr;
@@ -8363,7 +8419,7 @@ body.department-page {
 }
 
 .noi-hero-content {
-  max-width: 660px;
+  max-width: 860px;
 }
 
 .noi-matrix-card {
@@ -9779,3 +9835,612 @@ body.department-page {
   }
 }
 
+
+
+/* ==========================================================================
+   TAKASHIJ CLINIC - OFFICIAL LUXURY METALLIC GOLD THEME (CHỐT TOÀN BỘ TRANG)
+   ========================================================================== */
+
+/* 1. Global Font Import: Playfair Display + Montserrat (Hỗ trợ 100% tiếng Việt) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap');
+
+/* 2. Global Root Variables Override */
+:root {
+  --font-serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --secondary-color: #9E6418;
+  --text-muted: #3C342C;
+  --gold-dark: #6B3D06;
+  --gold-deep: #7A4810;
+  --gold-primary: #9E6418;
+  --gold-accent: #C8943C;
+  --gold-bright: #E8BC66;
+  --gold-light: #FFF0CA;
+  --bg-cream: #F4EADA;
+  --text-dark: #3C342C;
+}
+
+/* 3. Global Body Background (Nền ngọc trai champagne ánh hào quang ấm áp) */
+body {
+  font-family: var(--font-sans) !important;
+  background-color: #F4EADA !important;
+  background-image: 
+    radial-gradient(ellipse at 50% 160px, #FFFFFF 0%, #FAF2E6 35%, #F0E2CD 70%, #E6D2B7 100%) !important;
+  background-attachment: fixed !important;
+  color: var(--text-dark) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Section Backgrounds transparent */
+section,
+.philosophy-section,
+.vision-mission-section,
+.core-values-section,
+.care-model-section,
+.experts-section,
+.facilities-section,
+.specialties-section,
+.news-section,
+.testimonials-section,
+.partners-section,
+.booking-section,
+.services-section,
+.dept-intro-section,
+.dept-services-section,
+.dept-team-section,
+.dept-faq-section,
+.footer-top-info-section,
+.about-history-section,
+.about-stats-section {
+  background-color: transparent !important;
+}
+
+/* 5. Typography: H1, H2, .section-title, .brand-main */
+h1, h2, .section-title, .section-heading h2 {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif !important;
+}
+
+.section-title,
+.section-heading-clean .heading-text,
+.facilities-header h2,
+.booking-form-wrap h2,
+.dept-booking-title,
+.contact-map-section h2 {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif !important;
+  font-weight: 800 !important;
+  letter-spacing: normal !important;
+  text-transform: uppercase !important;
+  background: linear-gradient(180deg, #D8A246 0%, #A2671A 52%, #6E3F08 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 2.5px rgba(110, 60, 10, 0.28)) !important;
+}
+
+.section-title,
+.section-heading-clean .heading-text {
+  text-align: center;
+}
+
+.facilities-header h2 {
+  text-align: left !important;
+  font-size: 2.2rem !important;
+  line-height: 1.3 !important;
+}
+
+.facilities-header .sub {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--gold-deep) !important;
+  font-size: 1.05rem !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  margin-top: 10px !important;
+}
+
+.facilities-header p {
+  font-family: 'Montserrat', sans-serif !important;
+  color: var(--text-dark) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.8 !important;
+  font-weight: 500 !important;
+}
+
+.booking-form-wrap h2 {
+  text-align: center !important;
+  font-size: 2.1rem !important;
+  line-height: 1.3 !important;
+}
+
+.booking-form-wrap p {
+  color: var(--text-dark) !important;
+}
+
+h3, h4 {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--gold-deep);
+}
+
+/* 6. Header Styling */
+.site-header {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 2px solid transparent !important;
+  border-image: linear-gradient(90deg, transparent 5%, #C8943C 25%, #F7DF94 50%, #C8943C 75%, transparent 95%) 1 !important;
+  box-shadow: 0 4px 20px rgba(160, 110, 40, 0.1) !important;
+}
+
+.brand-main,
+.brand-title-main {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 800 !important;
+}
+
+.main-navigation a,
+.nav-links a {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  color: #2F2922 !important;
+  letter-spacing: 0.5px !important;
+}
+.main-navigation a:hover,
+.main-navigation li.active a,
+.nav-links a.active,
+.nav-links a:hover {
+  color: var(--gold-primary) !important;
+}
+
+/* 7. Buttons: 3D Booking Button & Guide Button */
+.btn-booking,
+.btn-booking-3d,
+.btn-primary,
+a.btn-primary,
+button.btn-primary,
+.btn-book-submit,
+.header-actions .btn-primary,
+.header-top-actions .btn-primary,
+.cta-btn-gold,
+.hero-cta .btn-primary,
+.booking-form-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 10px 26px !important;
+  border-radius: 40px !important;
+  background: linear-gradient(180deg, #E5BA6A 0%, #D49B38 14%, #B87516 40%, #945006 75%, #BF7708 92%, #743C02 100%) !important;
+  border: 1px solid #5A2E02 !important;
+  color: #FFFFFF !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 0.92rem !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  text-shadow: 0 1px 2px rgba(30, 10, 0, 0.9) !important;
+  box-shadow: 
+    0 6px 16px rgba(80, 40, 5, 0.42),
+    0 2px 4px rgba(60, 25, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8),
+    inset 0 -2px 3px rgba(255, 210, 100, 0.6),
+    inset 0 -3.5px 4px rgba(40, 15, 0, 0.65) !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.btn-booking::before,
+.btn-booking-3d::before,
+.header-actions .btn-primary::before,
+.header-top-actions .btn-primary::before,
+.cta-btn-gold::before,
+.hero-cta .btn-primary::before,
+.booking-form-btn::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  right: 10px;
+  height: 38%;
+  border-radius: 30px 30px 100px 100px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.08) 100%);
+  pointer-events: none;
+}
+.btn-booking:hover,
+.btn-booking-3d:hover,
+.header-actions .btn-primary:hover,
+.header-top-actions .btn-primary:hover,
+.cta-btn-gold:hover,
+.hero-cta .btn-primary:hover,
+.booking-form-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 
+    0 8px 22px rgba(80, 40, 5, 0.52),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-guide,
+.header-top-actions .btn-outline {
+  background: #FFFFFF !important;
+  border: 1.8px solid var(--gold-accent) !important;
+  color: var(--gold-deep) !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  border-radius: 30px !important;
+  box-shadow: 0 2px 8px rgba(160, 110, 40, 0.14) !important;
+}
+.btn-guide:hover,
+.header-top-actions .btn-outline:hover {
+  background: #FFFDF8 !important;
+  border-color: var(--gold-dark) !important;
+  color: var(--gold-dark) !important;
+}
+
+/* 8. Cards: Luxury Pearl-Gold */
+.vm-card,
+.value-card,
+.care-step-card,
+.expert-card,
+.facility-card,
+.specialty-card,
+.news-card,
+.service-card,
+.pillar-card,
+.footer-info-item,
+.testimonial-card,
+.philosophy-banner,
+.expert-card-inner,
+.department-card,
+.philosophy-card,
+.philosophy-feature-card {
+  background: linear-gradient(175deg, #FFFFFF 0%, #FCF9F3 55%, #F8F1E4 100%) !important;
+  border: 1.8px solid var(--gold-accent) !important;
+  border-radius: 20px !important;
+  box-shadow: 
+    0 16px 42px rgba(140, 95, 30, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.04),
+    inset 0 1px 1px rgba(255, 255, 255, 1) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.vm-card:hover,
+.value-card:hover,
+.care-step-card:hover,
+.expert-card:hover,
+.facility-card:hover,
+.specialty-card:hover,
+.news-card:hover,
+.service-card:hover,
+.department-card:hover,
+.philosophy-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 
+    0 24px 55px rgba(140, 95, 30, 0.24),
+    0 6px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* 9. Footer */
+.site-footer-main {
+  background: linear-gradient(180deg, #1C150E 0%, #120D08 100%) !important;
+  border-top: 3px solid transparent !important;
+  border-image: linear-gradient(90deg, transparent, #C8943C 25%, #F7DF94 50%, #C8943C 75%, transparent) 1 !important;
+  color: #D6CBC2 !important;
+}
+.site-footer-main h3,
+.site-footer-main h4 {
+  color: #F7DF94 !important;
+}
+.site-footer-main a {
+  color: #D6CBC2 !important;
+}
+.site-footer-main a:hover {
+  color: #FFE7A0 !important;
+}
+
+.footer-top-info-section {
+  border-top: 1.5px solid var(--gold-accent) !important;
+  padding: 55px 0 45px !important;
+  background-color: transparent !important;
+}
+
+.footer-top-title {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif !important;
+  font-weight: 800 !important;
+  letter-spacing: normal !important;
+  text-transform: uppercase !important;
+  background: linear-gradient(180deg, #D8A246 0%, #A2671A 52%, #6E3F08 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 2.5px rgba(110, 60, 10, 0.28)) !important;
+  font-size: 1.85rem !important;
+  text-align: center !important;
+  margin-bottom: 30px !important;
+}
+
+.footer-top-boxes {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+}
+
+.footer-info-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  padding: 18px 22px !important;
+  background: linear-gradient(175deg, #FFFFFF 0%, #FCF9F3 55%, #F8F1E4 100%) !important;
+  border: 1.8px solid var(--gold-accent) !important;
+  border-radius: 20px !important;
+  box-shadow: 
+    0 12px 30px rgba(140, 95, 30, 0.12),
+    0 3px 8px rgba(0, 0, 0, 0.04),
+    inset 0 1px 1px rgba(255, 255, 255, 1) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.footer-info-item:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 
+    0 16px 36px rgba(140, 95, 30, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+.footer-info-item .info-icon {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(145deg, #FFF6E0 0%, #ECC578 45%, #C28B2C 85%, #8A5412 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 10px rgba(120, 75, 15, 0.25) !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.footer-info-item .info-icon i {
+  color: #6B3D06 !important;
+  font-size: 1.15rem !important;
+  line-height: 1 !important;
+}
+
+.footer-info-item p {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #3C342C !important;
+  font-size: 0.95rem !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+.footer-info-item strong {
+  color: #1A1510 !important;
+  font-weight: 700 !important;
+}
+.vm-card-icon,
+.value-number {
+  width: 58px !important;
+  height: 58px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(145deg, #FFF6E0 0%, #ECC578 45%, #C28B2C 85%, #8A5412 100%) !important;
+  padding: 2.5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 6px 14px rgba(120, 75, 15, 0.28) !important;
+  margin-bottom: 15px !important;
+  color: #7A4810 !important;
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 800 !important;
+  font-size: 1.25rem !important;
+}
+.vm-card-icon img {
+  width: 32px !important;
+  height: 32px !important;
+  object-fit: contain !important;
+}
+/* ==========================================================================
+   BRIGHT LUXURY FORM INPUTS & 3D BOOKING BUTTONS (CHỐNG CHÌM NỀN)
+   ========================================================================== */
+:root {
+  --input-bg: #FFFFFF;
+}
+
+.form-input,
+input.form-input,
+textarea.form-input,
+select.form-input,
+.booking-form input,
+.booking-form textarea,
+.booking-form select,
+.booking-form-wrap .form-input,
+.dept-input-field,
+input.dept-input-field,
+textarea.dept-input-field,
+select.dept-input-field,
+.dept-booking-form input,
+.dept-booking-form textarea,
+.dept-booking-form select,
+.dept-booking-form-wrap .dept-input-field,
+.dept-booking-form-wrap input,
+.dept-booking-form-wrap textarea {
+  width: 100% !important;
+  padding: 14px 18px !important;
+  background-color: #FFFFFF !important;
+  background: #FFFFFF !important;
+  border: 1.5px solid #D6C2A5 !important;
+  border-radius: 10px !important;
+  color: #2C251E !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  box-shadow: 0 3px 10px rgba(120, 85, 35, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.25s ease !important;
+}
+
+.form-input::placeholder,
+.booking-form input::placeholder,
+.booking-form textarea::placeholder,
+.booking-form-wrap .form-input::placeholder,
+.dept-input-field::placeholder,
+.dept-booking-form input::placeholder,
+.dept-booking-form textarea::placeholder,
+.dept-booking-form-wrap .dept-input-field::placeholder,
+.dept-booking-form-wrap input::placeholder,
+.dept-booking-form-wrap textarea::placeholder {
+  color: #8C7B6C !important;
+  font-size: 0.92rem !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+}
+
+.form-input:focus,
+input.form-input:focus,
+textarea.form-input:focus,
+select.form-input:focus,
+.booking-form input:focus,
+.booking-form textarea:focus,
+.booking-form-wrap .form-input:focus,
+.dept-input-field:focus,
+input.dept-input-field:focus,
+textarea.dept-input-field:focus,
+select.dept-input-field:focus,
+.dept-booking-form input:focus,
+.dept-booking-form textarea:focus,
+.dept-booking-form-wrap .dept-input-field:focus,
+.dept-booking-form-wrap input:focus,
+.dept-booking-form-wrap textarea:focus {
+  background-color: #FFFFFF !important;
+  background: #FFFFFF !important;
+  border-color: #C8943C !important;
+  box-shadow: 0 0 0 3.5px rgba(200, 148, 60, 0.25), 0 4px 14px rgba(140, 95, 30, 0.14) !important;
+  outline: none !important;
+}
+
+/* 3D Booking Button for Form Submit (.btn-book-submit) */
+.btn-book-submit {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 13px 36px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 0.98rem !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  border-radius: 50px !important;
+  border: none !important;
+  cursor: pointer !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background: linear-gradient(180deg, #ECC578 0%, #D49D42 22%, #B37D24 55%, #8C570E 82%, #B8852E 100%) !important;
+  box-shadow: 
+    0 4px 14px rgba(140, 85, 15, 0.35),
+    0 1px 3px rgba(80, 45, 8, 0.4),
+    inset 0 1.5px 1px rgba(255, 245, 215, 0.85),
+    inset 0 -1.5px 2px rgba(90, 48, 5, 0.5) !important;
+  text-shadow: 0 1px 2px rgba(60, 30, 0, 0.6) !important;
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.btn-book-submit:hover {
+  transform: translateY(-2px) !important;
+  background: linear-gradient(180deg, #F5D592 0%, #E2AB4E 22%, #C28B2E 55%, #9C6314 82%, #C8953C 100%) !important;
+  box-shadow: 
+    0 8px 22px rgba(140, 85, 15, 0.45),
+    0 2px 5px rgba(80, 45, 8, 0.4),
+    inset 0 1.5px 1px rgba(255, 245, 215, 0.95),
+    inset 0 -1.5px 2px rgba(90, 48, 5, 0.5) !important;
+}
+
+.btn-book-guide {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px 30px !important;
+  background: #FFFFFF !important;
+  border: 1.8px solid var(--gold-accent) !important;
+  color: var(--gold-deep) !important;
+  border-radius: 50px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 2px 8px rgba(140, 95, 30, 0.08) !important;
+}
+
+.btn-book-guide:hover {
+  background: #FFFDF8 !important;
+  border-color: var(--gold-dark) !important;
+  color: var(--gold-dark) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(140, 95, 30, 0.16) !important;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 22px !important;
+  }
+  .facilities-header p {
+    padding-right: 30px !important;
+  }
+  .testimonials-card, .testimonial-item {
+    padding-right: 25px !important;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE LAYOUT & OVERFLOW ROBUST FIX (100% CLEAN MOBILE VIEWPORT)
+   ========================================================================== */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  position: relative !important;
+}
+
+@media (max-width: 900px) {
+  .footer-top-boxes {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .footer-info-item {
+    padding: 14px 18px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .knowledge-tabs-wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  .knowledge-tab-item {
+    padding: 8px 16px !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+/* Ensure all carousels & sliders never exceed viewport width on mobile */
+.swiper,
+.swiper-container,
+.hero-slider,
+.hero-swiper,
+.testimonials-section,
+.testimonials-swiper,
+.experts-section,
+.experts-swiper,
+.facilities-carousel-wrap,
+.partners-section,
+.partners-carousel-wrap,
+.dept-testimonials,
+.dept-testimonials-swiper {
+  overflow: hidden !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+}

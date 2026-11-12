@@ -3,24 +3,338 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Về chúng tôi - Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC</title>
-  <meta name="description" content="Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC là phòng khám đa khoa chuẩn quốc tế, tiên phong trong việc xây dựng hệ sinh thái chăm sóc sức khỏe chủ động và cá nhân hóa.">
-  <link rel="icon" href="assets/images/logo-takashij-transparent.png" sizes="32x32">
+  <title>Về Chúng Tôi - Takashij Clinic </title>
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
-    <!-- Google Fonts: EB Garamond -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+  
+  <!-- CSS Gốc -->
   <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  
+  <style>
 
-  <!-- ==========================================================================
-       HEADER & NAVIGATION (EXACT REPLICA OF HOMEPAGE)
-       ========================================================================== -->
+/* Standard, Non-stylized Ampersand (&) for Playfair Display - Thay dấu & cách điệu bằng dấu & gốc */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aXo.woff2') format('woff2'),
+       local('Montserrat-Bold'), local('Montserrat Bold'), local('Montserrat'), local('Arial Bold'), local('Arial');
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0026;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aXo.woff2') format('woff2'),
+       local('Montserrat'), local('Arial');
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0026;
+}
+
+  
+  /* ==========================================================================
+     TAKASHIJ CLINIC - FULL PAGE LUXURY GOLD THEME
+     ========================================================================== */
+  * { box-sizing: border-box; }
+
+  :root {
+    --gold-dark: #6B3D06;
+    --gold-deep: #7A4810;
+    --gold-primary: #9E6418;
+    --gold-accent: #C8943C;
+    --gold-bright: #E8BC66;
+    --gold-light: #FFF0CA;
+    --bg-cream: #F4EADA;
+    --text-dark: #3C342C;
+  }
+
+  body.theme-gold-luxury {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F4EADA !important;
+    background-image: 
+      radial-gradient(ellipse at 50% 160px, #FFFFFF 0%, #FAF2E6 35%, #F0E2CD 70%, #E6D2B7 100%) !important;
+    background-attachment: fixed !important;
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+  }
+
+  /* ALL SECTIONS TRANSPARENT TO SHOW LUXURY BACKGROUND */
+  .philosophy-section,
+  .vision-mission-section,
+  .core-values-section,
+  .care-model-section,
+  .experts-section,
+  .footer-top-info-section {
+    background: transparent !important;
+  }
+
+
+
+  /* TOP PREVIEW BAR */
+  .tone-preview-bar {
+    background: rgba(22, 17, 12, 0.96);
+    color: #fff;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+    border-bottom: 2px solid var(--gold-accent);
+  }
+  .tone-preview-bar .badge {
+    background: linear-gradient(90deg, #8A5412, #D8A548);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+  }
+  .tone-preview-bar .tone-btn {
+    background: #282828;
+    color: #DDD;
+    border: 1px solid #555;
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.84rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tone-preview-bar .tone-btn.active {
+    background: linear-gradient(135deg, #B88628, #F7DF94);
+    color: #111;
+    border-color: #FFE7A0;
+    box-shadow: 0 0 12px rgba(200, 153, 56, 0.6);
+    font-weight: 700;
+  }
+
+  /* HEADER */
+  .site-header.gold-header {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 2px solid transparent !important;
+    border-image: linear-gradient(90deg, transparent 5%, #C8943C 25%, #F7DF94 50%, #C8943C 75%, transparent 95%) 1 !important;
+    box-shadow: 0 4px 20px rgba(160, 110, 40, 0.1) !important;
+    position: sticky;
+    top: 0 !important;
+    z-index: 1000;
+  }
+  .brand-sub {
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    color: var(--gold-deep);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .brand-main {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.55rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: #1A1A1A;
+    line-height: 1.1;
+  }
+  .brand-clinic {
+    color: #9E1F24;
+    font-weight: 800;
+  }
+
+  /* BUTTONS */
+  .btn-guide {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 22px;
+    background: #FFFFFF;
+    border: 1.8px solid var(--gold-accent);
+    border-radius: 30px;
+    color: var(--gold-deep);
+    font-weight: 700;
+    font-size: 0.92rem;
+    box-shadow: 0 2px 8px rgba(160, 110, 40, 0.14);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .btn-guide:hover {
+    background: #FFFDF8;
+    border-color: var(--gold-dark);
+    color: var(--gold-dark);
+    transform: translateY(-1px);
+  }
+
+  .btn-booking-3d {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 26px;
+    border-radius: 40px;
+    background: linear-gradient(180deg, #E5BA6A 0%, #D49B38 14%, #B87516 40%, #945006 75%, #BF7708 92%, #743C02 100%);
+    border: 1px solid #5A2E02;
+    color: #FFFFFF !important;
+    font-weight: 800;
+    font-size: 0.92rem;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(30, 10, 0, 0.9);
+    box-shadow: 
+      0 6px 16px rgba(80, 40, 5, 0.42),
+      0 2px 4px rgba(60, 25, 0, 0.3),
+      inset 0 1px 1px rgba(255, 255, 255, 0.8),
+      inset 0 -2px 3px rgba(255, 210, 100, 0.6),
+      inset 0 -3.5px 4px rgba(40, 15, 0, 0.65);
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-booking-3d::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    right: 10px;
+    height: 38%;
+    border-radius: 30px 30px 100px 100px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.08) 100%);
+    pointer-events: none;
+  }
+  .btn-booking-3d:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 8px 22px rgba(80, 40, 5, 0.52),
+      inset 0 1px 1px rgba(255, 255, 255, 0.9);
+  }
+
+  /* SECTION TITLES (TEXT THẬT GOLD NỔI KHỐI) */
+  .section-title {
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    background: linear-gradient(180deg, #D8A246 0%, #A2671A 52%, #6E3F08 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    filter: drop-shadow(0 2px 2.5px rgba(110, 60, 10, 0.28)) !important;
+    text-align: center;
+    margin-bottom: 8px !important;
+  }
+
+  /* CARDS SANG TRỌNG TRÊN TOÀN BỘ TRANG */
+  .vm-card,
+  .value-card,
+  .care-step-card,
+  .expert-card,
+  .philosophy-banner {
+    background: linear-gradient(175deg, #FFFFFF 0%, #FCF9F3 55%, #F8F1E4 100%) !important;
+    border: 1.8px solid var(--gold-accent) !important;
+    border-radius: 22px !important;
+    box-shadow: 
+      0 18px 45px rgba(140, 95, 30, 0.16),
+      0 4px 12px rgba(0, 0, 0, 0.04),
+      inset 0 1px 1px rgba(255, 255, 255, 1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    position: relative;
+    overflow: hidden;
+  }
+  .vm-card:hover,
+  .value-card:hover,
+  .care-step-card:hover,
+  .expert-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 
+      0 24px 55px rgba(140, 95, 30, 0.24),
+      0 6px 16px rgba(0, 0, 0, 0.06) !important;
+  }
+
+  .vm-card h3,
+  .value-card h3,
+  .expert-info h3 {
+    font-family: 'EB Garamond', Georgia, serif !important;
+    color: var(--gold-deep) !important;
+    letter-spacing: 1px !important;
+  }
+
+  /* Huy chương tròn cho icon */
+  .medallion-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #FFF6E0 0%, #ECC578 45%, #C28B2C 85%, #8A5412 100%);
+    padding: 2.5px;
+    box-shadow: 0 6px 14px rgba(120, 75, 15, 0.28);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .medallion-circle-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(160deg, #FFFFFF 0%, #FAF0DF 100%);
+    border: 1.5px solid #D8A548;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-primary);
+    font-size: 1.45rem;
+  }
+
+  /* Đáy card viền ánh kim */
+  .card-bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #8A5412 0%, #D8A548 30%, #FFEAB0 50%, #D8A548 70%, #8A5412 100%);
+  }
+
+  /* FOOTER */
+  .site-footer-main {
+    background: linear-gradient(180deg, #1C150E 0%, #120D08 100%) !important;
+    border-top: 3px solid transparent !important;
+    border-image: linear-gradient(90deg, transparent, #C8943C 25%, #F7DF94 50%, #C8943C 75%, transparent) 1 !important;
+    color: #D6CBC2 !important;
+  }
+  .site-footer-main h3,
+  .site-footer-main h4 {
+    color: #F7DF94 !important;
+  }
+  .site-footer-main a {
+    color: #D6CBC2 !important;
+    transition: color 0.2s ease;
+  }
+  .site-footer-main a:hover {
+    color: #FFE7A0 !important;
+  }
+
+  </style>
+</head>
+<body class="theme-gold-luxury">
+
+  <!-- HEADER -->
   <header class="site-header" id="header">
     <div class="header-top">
       <div class="container">
@@ -83,6 +397,10 @@
       </div>
     </div>
   </header>
+
+  <!-- BODY SECTIONS TỪ VE-CHUNG-TOI.HTML -->
+  <main>
+    
 
   <!-- ABOUT HERO INTRO -->
   <section class="about-hero-section">
@@ -172,58 +490,87 @@
         <h2 class="section-title">TẦM NHÌN &amp; SỨ MỆNH</h2>
       </div>
 
-      <div class="vision-mission-grid">
-        <div class="vm-card">
-          <div class="vm-card-header">
-            <div class="vm-card-icon">
-              <img src="assets/images/icons/icon-website-01.png" alt="Tầm nhìn">
+      <div class="vision-mission-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 35px;">
+        <div class="vm-card" style="padding: 38px 36px 45px;">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 22px;">
+            <div class="medallion-circle">
+              <div class="medallion-circle-inner">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
             </div>
-            <h3 class="vm-card-title">TẦM NHÌN</h3>
+            <div style="width: 1.5px; height: 38px; background: linear-gradient(180deg, transparent, #C8943C, transparent);"></div>
+            <h3 style="font-size: 1.7rem; margin: 0;">TẦM NHÌN</h3>
           </div>
-          <p class="vm-card-desc">
+          <p style="font-size: 1.05rem; line-height: 1.76; color: #4A4036; margin: 0;">
             Trở thành điểm đến hàng đầu Việt Nam và khu vực trong việc cung cấp các sản phẩm – dịch vụ – giải pháp Y học trường thọ tới khách hàng và cộng đồng.
           </p>
+          <div class="card-bottom-bar"></div>
         </div>
 
-        <div class="vm-card">
-          <div class="vm-card-header">
-            <div class="vm-card-icon">
-              <img src="assets/images/icons/icon-website-02.png" alt="Sứ mệnh">
+        <div class="vm-card" style="padding: 38px 36px 45px;">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 22px;">
+            <div class="medallion-circle">
+              <div class="medallion-circle-inner">
+                <i class="fa-solid fa-flag"></i>
+              </div>
             </div>
-            <h3 class="vm-card-title">SỨ MỆNH</h3>
+            <div style="width: 1.5px; height: 38px; background: linear-gradient(180deg, transparent, #C8943C, transparent);"></div>
+            <h3 style="font-size: 1.7rem; margin: 0;">SỨ MỆNH</h3>
           </div>
-          <p class="vm-card-desc">
-            Chăm sóc toàn diện từng khách hàng Để từ đó xây dựng cộng đồng “Sống trường thọ” tại Việt Nam và khu vực phát triển bền vững. Từ đó, kéo dài tuổi thọ với thân khoẻ – tâm an – trí tuệ minh mẫn không còn chỉ là mơ ước.
+          <p style="font-size: 1.05rem; line-height: 1.76; color: #4A4036; margin: 0;">
+            Chăm sóc toàn diện từng khách hàng để từ đó xây dựng cộng đồng “Sống trường thọ” tại Việt Nam và khu vực phát triển bền vững. Từ đó, kéo dài tuổi thọ với thân khoẻ – tâm an – trí tuệ minh mẫn không còn chỉ là mơ ước.
           </p>
+          <div class="card-bottom-bar"></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- GIÁ TRỊ CỐT LÕI (TÂM - ĐỨC - TUỆ) -->
-  <section class="core-values-section">
+  <section class="core-values-section" id="gia-tri-cot-loi">
     <div class="container">
       <div class="section-title-wrap">
         <h2 class="section-title">GIÁ TRỊ CỐT LÕI</h2>
       </div>
 
-      <div class="core-values-grid">
-        <div class="value-card">
-          <div class="value-number">01</div>
-          <h3 class="value-title">TÂM</h3>
-          <p class="value-desc">Lấy “Tâm” làm gốc cho mọi chiến lược phát triển, xây dựng các giá trị ưu việt nhất cho khách hàng và cộng đồng.</p>
+      <div class="core-values-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 35px;">
+        <div class="value-card" style="padding: 36px 28px 44px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+          <div class="medallion-circle" style="margin-bottom: 18px;">
+            <div class="medallion-circle-inner">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+          </div>
+          <h3 style="font-size: 1.55rem; margin: 0 0 12px;">TÂM</h3>
+          <p style="font-size: 0.98rem; line-height: 1.72; color: #4A4036; margin: 0;">
+            Lấy “Tâm” làm gốc cho mọi chiến lược phát triển, xây dựng các giá trị ưu việt nhất cho khách hàng và cộng đồng.
+          </p>
+          <div class="card-bottom-bar"></div>
         </div>
 
-        <div class="value-card">
-          <div class="value-number">02</div>
-          <h3 class="value-title">ĐỨC</h3>
-          <p class="value-desc">Y đức – kim chỉ nam cho mọi hành động, kiên định mang tới các giá trị cao nhất cho khách hàng, để y học trường thọ không chỉ là lời hứa.</p>
+        <div class="value-card" style="padding: 36px 28px 44px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+          <div class="medallion-circle" style="margin-bottom: 18px;">
+            <div class="medallion-circle-inner">
+              <i class="fa-solid fa-users"></i>
+            </div>
+          </div>
+          <h3 style="font-size: 1.55rem; margin: 0 0 12px;">ĐỨC</h3>
+          <p style="font-size: 0.98rem; line-height: 1.72; color: #4A4036; margin: 0;">
+            Y đức – kim chỉ nam cho mọi hành động, kiên định mang tới các giá trị cao nhất cho khách hàng, để y học trường thọ không chỉ là lời hứa.
+          </p>
+          <div class="card-bottom-bar"></div>
         </div>
 
-        <div class="value-card">
-          <div class="value-number">03</div>
-          <h3 class="value-title">TUỆ</h3>
-          <p class="value-desc">Thừa hưởng các thành tựu trí tuệ khoa học – y học tiên tiến nhất thế giới, áp dụng trong từng giải pháp tới khách hàng.</p>
+        <div class="value-card" style="padding: 36px 28px 44px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+          <div class="medallion-circle" style="margin-bottom: 18px;">
+            <div class="medallion-circle-inner">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+          </div>
+          <h3 style="font-size: 1.55rem; margin: 0 0 12px;">TUỆ</h3>
+          <p style="font-size: 0.98rem; line-height: 1.72; color: #4A4036; margin: 0;">
+            Thừa hưởng các thành tựu trí tuệ khoa học – y học tiên tiến nhất thế giới, áp dụng trong từng giải pháp tới khách hàng.
+          </p>
+          <div class="card-bottom-bar"></div>
         </div>
       </div>
     </div>
@@ -365,6 +712,10 @@
     <!-- ==========================================================================
        FOOTER MAIN (4 COLUMNS)
        ========================================================================== -->
+  
+  </main>
+
+  <!-- FOOTER -->
   <footer class="site-footer-main">
     <div class="container">
       <div class="footer-brand-bar">
@@ -442,133 +793,7 @@
     </div>
   </footer>
 
-  <!-- ==========================================================================
-       FLOATING CONTACT BUTTONS (GOLD CIRCLES - MATCHES ALL SCREENSHOTS)
-       ========================================================================== -->
-  <div class="floating-contact-group">
-    <a href="https://zalo.me/0982375637" target="_blank" rel="noopener noreferrer" class="floating-btn-circle btn-zalo animated-shake" title="Chat Zalo Hotline: 0982 375 637">
-      <span style="font-weight: 800; font-size: 1.05rem; font-family: sans-serif;">Zalo</span>
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61582518416795" target="_blank" rel="noopener noreferrer" class="floating-btn-circle btn-messenger animated-shake" title="Facebook Messenger">
-      <i class="fa-brands fa-facebook-messenger"></i>
-    </a>
-    <a href="tel:0982375637" class="floating-btn-circle btn-phone animated-shake" title="Gọi Hotline: 0982 375 637">
-      <i class="fa-solid fa-phone"></i>
-    </a>
-    <a href="#header" class="floating-btn-circle back-to-top-btn" title="Lên đầu trang">
-      <i class="fa-solid fa-arrow-up"></i>
-    </a>
-  </div>
-
-  <!-- ==========================================================================
-       MOBILE WEB APP BOTTOM NAVIGATION BAR (FIXED DOCK - APP LIKE EXPERIENCE)
-       ========================================================================== -->
-  <nav class="mobile-app-bottom-bar" aria-label="Điều hướng Web App">
-    <!-- 1. Menu bên trái -->
-    <button type="button" class="mobile-app-tab mobile-app-menu-btn" aria-label="Mở menu">
-      <i class="fa-solid fa-bars-staggered"></i>
-      <span>Menu</span>
-    </button>
-
-    <!-- 2. Dịch vụ -->
-    <a href="san-pham-dich-vu.html" class="mobile-app-tab" aria-label="Sản phẩm và Dịch vụ">
-      <i class="fa-solid fa-notes-medical"></i>
-      <span>Dịch vụ</span>
-    </a>
-
-    <!-- 3. Nút Trang chủ ở giữa nổi bật (Floating App Circle) -->
-    <a href="index.html" class="mobile-app-tab mobile-app-tab-home" aria-label="Trang chủ">
-      <div class="mobile-app-home-circle">
-        <i class="fa-solid fa-house"></i>
-      </div>
-      <span>Trang chủ</span>
-    </a>
-
-    <!-- 4. Thăm khám / Hướng dẫn -->
-    <a href="huong-dan-tham-kham.html" class="mobile-app-tab" aria-label="Hướng dẫn thăm khám">
-      <i class="fa-solid fa-clipboard-check"></i>
-      <span>Thăm khám</span>
-    </a>
-
-    <!-- 5. Đặt lịch bên phải -->
-    <a href="dat-lich-kham.html" class="mobile-app-tab mobile-app-tab-booking" aria-label="Đặt lịch ngay">
-      <i class="fa-solid fa-calendar-check"></i>
-      <span>Đặt lịch</span>
-    </a>
-  </nav>
-
-  <!-- EXPERT PROFILE MODAL POPUP -->
-  <div class="expert-modal-backdrop" id="expertModal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="expert-modal-dialog">
-      <div class="expert-modal-content">
-        <!-- Gold Luxury Close Button -->
-        <button type="button" class="expert-modal-close" aria-label="Đóng popup">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-
-        <div class="expert-modal-body">
-          <!-- Left Column: Expert Identity & Booking -->
-          <div class="expert-modal-sidebar">
-            <div class="expert-modal-avatar-frame">
-              <img src="" alt="" class="expert-modal-avatar" id="modalExpertImg">
-            </div>
-            <div class="expert-modal-badge" id="modalExpertBadge">CHUYÊN GIA QUỐC TẾ</div>
-            <h3 class="expert-modal-name" id="modalExpertName"></h3>
-            <div class="expert-modal-role" id="modalExpertRole"></div>
-            <div class="expert-modal-workplace" id="modalExpertWorkplace"></div>
-            
-            <div class="expert-modal-contact-box">
-              <div class="expert-modal-hotline">
-                <i class="fa-solid fa-phone-volume"></i>
-                <div>
-                  <span class="hotline-label">Hotline tư vấn trực tiếp:</span>
-                  <a href="tel:0982375637" class="hotline-val">0982 375 637</a>
-                </div>
-              </div>
-              <a href="dat-lich-kham.html" class="btn-primary expert-modal-book-btn">
-                <i class="fa-regular fa-calendar-check"></i> Đặt lịch tư vấn ưu tiên
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Column: Medical Specialties, Achievements & Qualifications -->
-          <div class="expert-modal-main">
-            <!-- Specialties -->
-            <div class="expert-modal-block">
-              <div class="expert-modal-block-header">
-                <i class="fa-solid fa-stethoscope"></i>
-                <h4>LĨNH VỰC CHUYÊN MÔN</h4>
-              </div>
-              <p class="expert-modal-specialties" id="modalExpertSpecialties"></p>
-            </div>
-
-            <!-- Career Achievements -->
-            <div class="expert-modal-block">
-              <div class="expert-modal-block-header">
-                <i class="fa-solid fa-award"></i>
-                <h4>THÀNH TỰU &amp; DẤU ẤN SỰ NGHIỆP</h4>
-              </div>
-              <ul class="expert-modal-list" id="modalExpertAchievements"></ul>
-            </div>
-
-            <!-- Credentials & Organizations -->
-            <div class="expert-modal-block">
-              <div class="expert-modal-block-header">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <h4>QUÁ TRÌNH ĐÀO TẠO &amp; HIỆP HỘI Y KHOA</h4>
-              </div>
-              <ul class="expert-modal-list" id="modalExpertCredentials"></ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
-  <script src="js/main.js"></script>
-  <!-- MOBILE MENU DRAWER -->
+    <!-- MOBILE MENU DRAWER -->
   <div class="mobile-nav-overlay"></div>
   <div class="mobile-nav-drawer">
     <div class="mobile-drawer-header">
@@ -579,7 +804,7 @@
       <li><a href="index.html">Trang chủ</a></li>
       <li><a href="ve-chung-toi.html">Về chúng tôi</a></li>
       <li>
-        <a href="san-pham-dich-vu.html">Sản phẩm &amp; Dịch vụ</a>
+        <a href="san-pham-dich-vu.html">Sản phẩm & Dịch vụ</a>
         <div class="mobile-submenu">
           <a href="san-pham-dich-vu.html">Tất cả Chuyên khoa</a>
           <a href="khoa-noi-tong-hop.html">Khoa Nội tổng hợp</a>
@@ -600,5 +825,22 @@
     </div>
   </div>
 
+  <!-- FLOATING TOOLS -->
+  <div style="position: fixed; right: 22px; bottom: 25px; display: flex; flex-direction: column; gap: 12px; z-index: 999;">
+    <a href="https://zalo.me/0961869818" style="width: 48px; height: 48px; border-radius: 50%; background: #0068FF; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" target="_blank" title="Zalo">Zalo</a>
+    <a href="https://www.facebook.com/profile.php?id=61596233318320#" style="width: 48px; height: 48px; border-radius: 50%; background: #0084FF; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" target="_blank" title="Messenger">
+      <i class="fa-brands fa-facebook-messenger"></i>
+    </a>
+    <a href="tel:0961869818" style="width: 48px; height: 48px; border-radius: 50%; background: #25D366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" title="Gọi điện">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="#" style="width: 48px; height: 48px; border-radius: 50%; background: var(--gold-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" title="Lên đầu trang">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

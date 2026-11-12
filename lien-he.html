@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -99,12 +100,12 @@
 
         <!-- Right Form -->
         <div class="dept-booking-form-wrap">
-          <h1 class="dept-booking-title" style="font-family: var(--font-serif); font-size: 2.2rem; color: #C39E57; margin-bottom: 12px; text-transform: uppercase;">
+          <h1 class="dept-booking-title" style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 12px; text-transform: uppercase;">
             ĐỂ LẠI NHU CẦU THĂM KHÁM
           </h1>
           <p class="dept-booking-subtitle" style="font-size: 1.05rem; line-height: 1.65; color: #5C5243; margin-bottom: 25px;">
             Hãy để Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC chăm sóc sức khỏe của bạn.<br>
-            Để lại thông tin chi tiết dưới đây. Các trường bắt buộc được đánh dấu *.
+            Để lại thông tin chi tiết dưới đây (các trường có dấu * là bắt buộc).
           </p>
 
           <form class="dept-booking-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Viện Nghiên Cứu Sức Khỏe - TAKASHIJ CLINIC sẽ liên hệ tư vấn trong thời gian sớm nhất.'); this.reset();">
@@ -122,8 +123,8 @@
             </div>
 
             <div class="dept-booking-actions" style="display: flex; gap: 15px; margin-top: 10px;">
-              <button type="submit" class="btn-primary" style="padding: 12px 32px; border-radius: 30px; font-weight: 700; text-transform: none; font-size: 1rem; box-shadow: none;">Đặt lịch ngay</button>
-              <a href="huong-dan-tham-kham.html" class="btn-outline" style="padding: 12px 28px; border-radius: 30px; font-weight: 600; text-transform: none; font-size: 1rem; background: #FAF7F2; border-color: #E0CA89;">Hướng dẫn thăm khám</a>
+              <button type="submit" class="btn-primary btn-book-submit" style="padding: 13px 36px; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 0.98rem;">Đặt lịch ngay</button>
+              <a href="huong-dan-tham-kham.html" class="btn-outline btn-book-guide" style="padding: 12px 30px; border-radius: 30px; font-weight: 600; text-transform: none; font-size: 0.95rem;">Hướng dẫn thăm khám</a>
             </div>
           </form>
         </div>
@@ -137,7 +138,7 @@
   <section class="contact-map-section" style="padding: 40px 0 60px 0; background: #FAF7F2;">
     <div class="container">
       <div style="text-align: center; margin-bottom: 30px;">
-        <h2 style="font-family: var(--font-serif); font-size: 2rem; color: #2C251E; margin-bottom: 8px;">VỊ TRÍ PHÒNG KHÁM</h2>
+        <h2 class="contact-map-title section-title" style="font-size: 2rem; margin-bottom: 8px;">VỊ TRÍ PHÒNG KHÁM</h2>
         <p style="color: #6D4C24; font-size: 1.05rem; font-weight: 500;">36 Nguyễn Quý Cảnh, phường Bình Trưng, TP Hồ Chí Minh.</p>
       </div>
 

@@ -17,6 +17,9 @@ test_*.png
 check_*.png
 homepage_*.png
 gallery_preview.html
+scratch_*.html
+test_*.html
+test-*.html
 
 # Raw unoptimized photo archive
 /anh website/
